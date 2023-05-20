@@ -14,8 +14,7 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-            <Route path='*' element={<Navigate to='/home' replace />} />
-            <Route path="/home" element={<Home />}></Route>
+            <Route path='*' element={<Home />}></Route>
             {/* <Route path="/dashboard" element={<DashboardScreen />}></Route>
             <Route path="/quiz/edit/:gameId" element={<EditQuizPage />}></Route> */}
           </Routes>

@@ -6,7 +6,7 @@ function SignInForm () {
     <>
       <div className="navbar-desktop">
         <span className="navbar-desktop-items"><Link to="/projects" className="link">Projects</Link></span>
-        <span className="navbar-desktop-items"><Link to="/home" className="link">Home</Link></span>
+        <span className="navbar-desktop-items"><Link to="/" className="link">Home</Link></span>
         <span className="navbar-desktop-items"><Link to="/about" className="link">About</Link></span>
       </div>
     </>
