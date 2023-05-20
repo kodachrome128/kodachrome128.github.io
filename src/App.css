@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'MateriaProLight';
+  src: url('fonts/MateriaProLight.woff');
+  font-weight: light;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'MateriaProRegular';
+  src: url('fonts/MateriaProRegular.woff');
+  font-weight: normal;
+  font-style: normal;
+}   
+
+@font-face {
+  font-family: 'MateriaProBold';
+  src: url('fonts/MateriaProBold.woff');
+  font-weight: bold;
+  font-style: normal;
+}   
+
+html {
+  background-color: rgb(1, 0, 20);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-desktop {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 8vh;
+  max-height: 100px;
+}
+
+.navbar-desktop-items{
+  margin: 0 50px 0 50px;
+  font-size: 25px;
+  font-family: 'MateriaProRegular';
+}
+
+.link {
+  color: #05D9E8;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.link:hover {
+  background-color: #05D9E8;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link:active {
+  background-color: #04AA6D;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-desktop {
+  display: flex;
+}
+
+.centered-title {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'MateriaProBold';
+  font-size: 200px;
+  color: #C252E1;
+}
+
+.grid-size {
+  background-size:100% var(--background-height,100vh);
+  overflow:hidden;
+  position:absolute;
+  left:0;
+  top:0;
+  width:100vw;
+  height:var(--background-height,100vh);
+  z-index:-2;
+}
+
+.grid{
+  position:absolute;
+  bottom: -30%;
+  left:0;
+  margin-left: -50%;
+  width: 200%;
+  height: 100%;
+  background-position-y: 0px;
+  background-image:
+        repeating-linear-gradient(90deg,var(--grid-color,black) 0%,transparent calc(1px + var(--grid-blur,0px)), transparent var(--grid-size),var(--grid-color,black) calc(var(--grid-size) + 1px + var(--grid-blur,0px))),repeating-linear-gradient(180deg,var(--grid-color,black) 0%,transparent calc(1px + var(--grid-blur,0px)), transparent var(--grid-size),var(--grid-color,black) calc(var(--grid-size) + 1px + var(--grid-blur,0px)));
+  transform:perspective(50vh) rotateX(60deg) translateZ(10px);
+  animation:moving-grid 0.5s infinite linear;
+  z-index:-1;
+}
+
+@keyframes moving-grid{
+  0%{
+    transform:perspective(50vh) rotateX(60deg) translateZ(10px) translateY(-var(--grid-size));
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform:perspective(50vh) rotateX(60deg) translateZ(10px) translateY(var(--grid-size));
   }
 }
