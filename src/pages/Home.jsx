@@ -30,6 +30,7 @@ const Home = () => {
         <>
           <div className="centered-title">
             <h1>Welcome</h1>
+            <p>This page is currently under construction</p>
           </div>
           <div className="grid-size">
             <div className="grid" style={style}></div>
