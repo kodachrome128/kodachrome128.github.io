@@ -1,0 +1,36 @@
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-sina-weibo:before {
+  content: "\ea53";
+}
+.icon-facebook-with-circle:before {
+  content: "\ea66";
+}
+.icon-facebook:before {
+  content: "\ea67";
+}
+.icon-instagram:before {
+  content: "\ea6f";
+}
+.icon-linkedin:before {
+  content: "\ea73";
+}
+.icon-twitter:before {
+  content: "\ea7c";
+}
+.icon-youtube-with-circle:before {
+  content: "\ea7f";
+}
