@@ -2,7 +2,7 @@ import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Navbar from '../components/Navbar';
 
-const Home = () => {
+const About = () => {
   const smallScreen = useMediaQuery('(max-width: 650px)');
   const largeScreen = useMediaQuery('(min-width: 651px)');
 
@@ -19,26 +19,22 @@ const Home = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="centered-title title-padding-mobile">
-            <h1 className="small-title glow-purple">WELCOME</h1>
-            <h2 className="small-margin glow-blue">THIS IS MY PORTFOLIO</h2>
-            <h3 className="small-margin glow-blue">Please feel free to look around!</h3>
+          <div className="centered-title">
+            <h1 className="small-title glow-purple">About</h1>
+            <h2 className="glow-blue">This page is currently under construction</h2>
           </div>
           <div className="grid-size">
-            <div className="sun"></div>
             <div className="grid" style={style}></div>
           </div>
         </>
       )}
       {largeScreen && (
         <>
-          <div className="centered-title title-padding-desktop">
-            <h1 className="glow-purple">WELCOME</h1>
-            <h2 className="small-margin glow-blue">THIS IS MY PORTFOLIO</h2>
-            <h3 className="small-margin glow-blue">Please feel free to look around!</h3>
+          <div className="centered-title">
+            <h1 className="glow-purple">About</h1>
+            <h2 className="glow-blue">This page is currently under construction</h2>
           </div>
           <div className="grid-size">
-            <div className="sun"></div>
             <div className="grid" style={style}></div>
           </div>
         </>
@@ -47,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

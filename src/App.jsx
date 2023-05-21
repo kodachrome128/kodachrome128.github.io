@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './pages/Home';
+import About from './pages/About';
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path='*' element={<Home />}></Route>
-            {/* <Route path="/dashboard" element={<DashboardScreen />}></Route>
-            <Route path="/quiz/edit/:gameId" element={<EditQuizPage />}></Route> */}
+            <Route path="/about" element={<About />}></Route>
+            {/* <Route path="/quiz/edit/:gameId" element={<EditQuizPage />}></Route> */}
           </Routes>
         </BrowserRouter>
     </>
