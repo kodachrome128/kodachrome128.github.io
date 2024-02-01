@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.bed6c30d.css",
-    "main.js": "/static/js/main.3bc36419.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/MateriaProRegular.woff": "/static/media/MateriaProRegular.d9e639b12a9145d5e928.woff",
-    "static/media/MateriaProLight.woff": "/static/media/MateriaProLight.0844770e38d8955d325f.woff",
-    "static/media/MateriaProBold.woff": "/static/media/MateriaProBold.b0197b1f01b4a5efe202.woff",
+    "main.css": "/static/css/main.26c717fe.css",
+    "main.js": "/static/js/main.0c8addf2.js",
+    "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
+    "static/media/FuturaCyrillicExtraBold.woff": "/static/media/FuturaCyrillicExtraBold.d5327f27b104cd252527.woff",
+    "static/media/FuturaCyrillicDemi.woff": "/static/media/FuturaCyrillicDemi.1fa09eb5be28d5aded5a.woff",
+    "static/media/FuturaCyrillicBold.woff": "/static/media/FuturaCyrillicBold.5f706378d8f9a8c7b274.woff",
+    "static/media/FuturaCyrillicLight.woff": "/static/media/FuturaCyrillicLight.771add7f65bc0d53ca8b.woff",
+    "static/media/FuturaCyrillicMedium.woff": "/static/media/FuturaCyrillicMedium.48dfecb562dfd789a300.woff",
+    "static/media/FuturaCyrillicHeavy.woff": "/static/media/FuturaCyrillicHeavy.c44d5abde1e36c6628eb.woff",
+    "static/media/FuturaCyrillicBook.woff": "/static/media/FuturaCyrillicBook.376720780ed67df2bcc7.woff",
     "index.html": "/index.html",
-    "main.bed6c30d.css.map": "/static/css/main.bed6c30d.css.map",
-    "main.3bc36419.js.map": "/static/js/main.3bc36419.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.26c717fe.css.map": "/static/css/main.26c717fe.css.map",
+    "main.0c8addf2.js.map": "/static/js/main.0c8addf2.js.map",
+    "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bed6c30d.css",
-    "static/js/main.3bc36419.js"
+    "static/css/main.26c717fe.css",
+    "static/js/main.0c8addf2.js"
   ]
 }
