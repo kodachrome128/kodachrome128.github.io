@@ -19,27 +19,28 @@ const Home = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="centered-title title-padding-mobile">
-            <h1 className="small-title glow-purple">WELCOME</h1>
-            <h2 className="small-margin glow-blue">THIS IS MY PORTFOLIO</h2>
-            <h3 className="small-margin glow-blue">Please feel free to look around!</h3>
-          </div>
-          <div className="grid-size">
-            <div className="sun"></div>
-            <div className="grid" style={style}></div>
+          <div className="title">
+            <div className="blur-container"></div>
+            <div className="title-content">
+              <h1 class="centered">Welcome</h1>
+              <p>This is v3 of my portfolio website. Please take a look around!</p>
+            </div>
           </div>
         </>
       )}
       {largeScreen && (
+        // <>
+        //   <div className="blur-container centered-title title-padding-desktop">
+        //     <h2>Tao Tao</h2>
+        //   </div>
+        // </>
         <>
-          <div className="centered-title title-padding-desktop">
-            <h1 className="glow-purple">WELCOME</h1>
-            <h2 className="small-margin glow-blue">THIS IS MY PORTFOLIO</h2>
-            <h3 className="small-margin glow-blue">Please feel free to look around!</h3>
-          </div>
-          <div className="grid-size">
-            <div className="sun"></div>
-            <div className="grid" style={style}></div>
+          <div className="title">
+            <div className="blur-container"></div>
+            <div className="title-content">
+              <h1 class="centered">Welcome</h1>
+              <p>This is v3 of my portfolio website. Please take a look around!</p>
+            </div>
           </div>
         </>
       )}

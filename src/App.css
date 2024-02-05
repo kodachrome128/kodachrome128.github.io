@@ -1,63 +1,9 @@
-@font-face {
-  font-family: 'Futura PT Book';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Book'), url('fonts/FuturaCyrillicBook.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Light'), url('fonts/FuturaCyrillicLight.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Medium'), url('fonts/FuturaCyrillicMedium.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Demi';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Demi'), url('fonts/FuturaCyrillicDemi.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Heavy'), url('fonts/FuturaCyrillicHeavy.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Bold'), url('fonts/FuturaCyrillicBold.woff') format('woff');
-}
-  
-
-@font-face {
-  font-family: 'Futura PT Extra Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Futura PT Extra Bold'), url('fonts/FuturaCyrillicExtraBold.woff') format('woff');
-}
-
 body {
-  background: rgb(25, 25, 25);
+  background: rgb(15, 15, 15);
   margin: 0;
   height: 100vh;
   display: flex;
+  color: white;
 }
 
 .navbar-desktop {
@@ -71,7 +17,7 @@ body {
 .navbar-desktop-items {
   margin: 0 50px 0 50px;
   font-size: 22px;
-  font-family: 'Futura PT Demi';
+  font-family: 'IBMPlexSans-Text';
 }
 
 .navbar-mobile {
@@ -85,46 +31,82 @@ body {
 .navbar-mobile-items {
   margin: 0 25px 0 25px;
   font-size: 20px;
-  font-family: 'Futura PT Demi';
+  font-family: 'IBMPlexSans-Text';
 }
 
 .link {
   color: #dcdcdc;
   text-decoration: none;
-  padding: 10px;
   transition: 0.2s;
-  border-radius: 4px;
 }
 
 .link:hover {
-  font-size: 25px;
   color: rgb(100, 100, 100);
 }
 
 .link:active {
   color: rgb(50, 50, 50);
+  transition: 0.2s ease;
 }
 
 .active {
-  padding: 10px;
-  border-radius: 4px;
-  background-color: rgb(125, 125, 125);
+  text-decoration: underline white;
+  text-underline-offset: 4px; /* Adjust the value as needed */
 }
+
+.animated-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated-underline:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white; /* Set the underline color */
+  transition: width 0.1s ease;
+  left: 50%;
+  bottom: 0; /* Set to bottom instead of top */
+  transform: translateX(-50%);
+}
+
+.animated-underline:hover:after {
+  width: 100%;
+}
+
 
 .small-title {
   font-size: 80px;
 }
 
-.centered-title {
+.title {
   position: fixed;
   top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.centered {
   text-align: center;
-  backdrop-filter: blur(10px);
+}
+
+.blur-container {
+  backdrop-filter: blur(15px) saturate(100%);
+  -webkit-backdrop-filter: blur(15px) saturate(100%);
+  background-color: rgba(136, 136, 136, 0.15);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
+  justify-content: center;
 }
 
 .title-padding-desktop {
@@ -136,40 +118,42 @@ body {
 }
 
 h1 {
-  font-family: 'Futura PT Medium';
-  font-size: 200px;
-  color: #fdbee3;
+  font-family: 'IBMPlexMono-Thin';
+  font-size: 60px;
   margin: 0;
 }
 
 h2 {
-  font-family: 'Futura PT Medium';
-  font-size: 45px;
-  color: #97eaf4;
+  font-family: 'IBMPlexMono-Thin';
+  font-size: 50px;
 }
 
 h3 {
-  font-family: 'Futura PT Medium';
+  font-family: 'IBMPlexMono-Thin';
   font-size: 30px;
-  color: #97eaf4;
 }
 
-.glow-purple {
-  text-shadow:
-    0 0 7px #fdbee3,
-    0 0 10px #fdbee3,
-    0 0 42px #c60877,
-    0 0 82px #c60877,
-    0 0 102px #c60877;
-}
-
-.glow-blue {
-  text-shadow:
-  0 0 7px #0ad8f0,
-  0 0 10px #0ad8f0,
-  0 0 42px #0ad8f0;
+p {
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 15px;
 }
 
 .small-margin {
  margin: 10px 0 10px 0;
+}
+
+.profile-pic {
+  display: block;
+  max-width:300px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.heading-with-pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px
 }
