@@ -13,7 +13,7 @@ const Home = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="title">
+          <div className="title-home">
             <div className="blur-container"></div>
             <div className="title-content">
               <h1 class="centered">Welcome</h1>
@@ -29,7 +29,7 @@ const Home = () => {
         //   </div>
         // </>
         <>
-          <div className="title">
+          <div className="title-home">
             <AnimatedDiv>
               <div className="blur-container"></div>
               <div className="title-content">

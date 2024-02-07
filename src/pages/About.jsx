@@ -15,27 +15,35 @@ const About = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="title">
-            <div className="blur-container"></div>
-            <div className="title-content">
-              <h1 class="centered">Welcome</h1>
-              <p>This is v3 of my portfolio website. Please take a look around!</p>
-            </div>
+          <div className="title-mobile">
+            <AnimatedDiv>
+              <div className="blur-container"></div>
+              <div className="title-content">
+                    <h2>Hello! I'm Tao Tao.</h2>              
+                  <img src={my_pic} alt="myself" className="profile-pic"></img>
+                  <p>I'm currently a 4th year student at the University of New South Wales studying a bachelor's degree in Computer Science and Media Art.
+                      I am focused on a variety of topics such as UI and UX design, fullstack development, as well as visual effects, 3D design and photography.
+                    </p>
+                    <p>Please check out some of my projects and creations!</p>
+
+             </div>
+            </AnimatedDiv>
           </div>
         </>
       )}
       {largeScreen && (
         <>
-          <div className="title">
+          <div className="title-desktop">
             <AnimatedDiv>
               <div className="blur-container"></div>
               <div className="title-content">
-                <div className="heading-with-pic">
+                <div className="heading-with-pic-desktop">
                   <div>
                     <h2>Hello! I'm Tao Tao.</h2>              
                     <p>I'm currently a 4th year student at the University of New South Wales studying a bachelor's degree in Computer Science and Media Art.
-                      I am focused on a variety of topics such as UI and UX design, fullstack development, as well as VFX and 3D design. 
+                      I am focused on a variety of topics such as UI and UX design, fullstack development, as well as visual effects, 3D design and photography.
                     </p>
+                    <p>Please check out some of my projects and creations!</p>
                   </div>
                   <img src={my_pic} alt="myself" className="profile-pic"></img>
                 </div>
