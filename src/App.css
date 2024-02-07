@@ -80,7 +80,31 @@ body {
   font-size: 80px;
 }
 
-.title {
+.title-desktop {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  width: 90%;
+  max-width: 1000px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.title-mobile {
+  position: fixed;
+  top: calc(45% + 120px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.title-home {
   position: fixed;
   top: 45%;
   left: 50%;
@@ -155,7 +179,7 @@ p {
   border-radius: 10px;
 }
 
-.heading-with-pic {
+.heading-with-pic-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
