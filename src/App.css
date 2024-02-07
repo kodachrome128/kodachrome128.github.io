@@ -81,27 +81,27 @@ body {
 }
 
 .title-desktop {
-  position: fixed;
-  top:50%;
-  left: 50%;
+  position: absolute;
   width: 90%;
   max-width: 1000px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 400px;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(-50% + 30px));
+  transform: translate(-50%, calc(-50% + 30px));
   align-items: center;
   justify-content: center;
   padding: 35px;
 }
 
 .title-mobile {
-  position: fixed;
-  top: calc(45% + 120px);
+  position: absolute;
+  top: 500px;
   left: 50%;
+  width: 98%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  padding: 35px;
 }
 
 .title-home {
