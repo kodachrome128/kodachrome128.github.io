@@ -1,7 +1,7 @@
 import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {
-  Link, 
+  NavLink, 
   useLocation
 } from 'react-router-dom';
 
@@ -17,38 +17,38 @@ function SignInForm () {
       {smallScreen && (
         <div className="navbar-mobile">
           <span className={`navbar-mobile-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link animated-underline">
+            <NavLink to="/projects" className="NavLink animated-underline">
               PROJECTS
-            </Link>
+            </NavLink>
           </span>
           <span className={`navbar-mobile-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link animated-underline">
+            <NavLink to="/" className="NavLink animated-underline">
               HOME
-            </Link>
+            </NavLink>
           </span>
           <span className={`navbar-mobile-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link animated-underline">
+            <NavLink to="/about" className="NavLink animated-underline">
               ABOUT
-            </Link>
+            </NavLink>
           </span>
         </div>
       )}
       {largeScreen && (
         <div className="navbar-desktop">
           <span className={`navbar-desktop-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link animated-underline">
+            <NavLink to="/projects" className="NavLink animated-underline">
               PROJECTS
-            </Link>
+            </NavLink>
           </span>
           <span className={`navbar-desktop-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link animated-underline">
+            <NavLink to="/" className="NavLink animated-underline">
               HOME
-            </Link>
+            </NavLink>
           </span>
           <span className={`navbar-desktop-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link animated-underline">
+            <NavLink to="/about" className="NavLink animated-underline">
               ABOUT
-            </Link>
+            </NavLink>
           </span>
         </div>
       )}

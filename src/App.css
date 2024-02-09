@@ -34,17 +34,17 @@ body {
   font-family: 'IBMPlexSans-Text';
 }
 
-.link {
+.navlink {
   color: #dcdcdc;
   text-decoration: none;
   transition: 0.2s;
 }
 
-.link:hover {
+.navlink:hover {
   color: rgb(100, 100, 100);
 }
 
-.link:active {
+.navlink:active {
   color: rgb(50, 50, 50);
   transition: 0.2s ease;
 }
