@@ -17,17 +17,17 @@ function SignInForm () {
       {smallScreen && (
         <div className="navbar-mobile">
           <span className={`navbar-mobile-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link animated-underline">
+            <Link to="/projects" className="link">
               PROJECTS
             </Link>
           </span>
           <span className={`navbar-mobile-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link animated-underline">
+            <Link to="/" className="link">
               HOME
             </Link>
           </span>
-          <span className={`navbar-mobile-items ${isActive('/#/about') && 'active'}`}>
-            <Link to="/#/about" className="link animated-underline">
+          <span className={`navbar-mobile-items ${isActive('/about') && 'active'}`}>
+            <Link to="/about" className="link">
               ABOUT
             </Link>
           </span>
@@ -36,17 +36,17 @@ function SignInForm () {
       {largeScreen && (
         <div className="navbar-desktop">
           <span className={`navbar-desktop-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link animated-underline">
+            <Link to="/projects" className="link">
               PROJECTS
             </Link>
           </span>
           <span className={`navbar-desktop-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link animated-underline">
+            <Link to="/" className="link">
               HOME
             </Link>
           </span>
-          <span className={`navbar-desktop-items ${isActive('/#/about') && 'active'}`}>
-            <Link to="/#/about" className="link animated-underline">
+          <span className={`navbar-desktop-items ${isActive('/about') && 'active'}`}>
+            <Link to="/about" className="link">
               ABOUT
             </Link>
           </span>
