@@ -11,7 +11,7 @@ function App() {
       <Routes>
         {/* Use exact prop to match the exact path */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/#/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

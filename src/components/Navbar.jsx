@@ -26,8 +26,8 @@ function SignInForm () {
               HOME
             </Link>
           </span>
-          <span className={`navbar-mobile-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link animated-underline">
+          <span className={`navbar-mobile-items ${isActive('/#/about') && 'active'}`}>
+            <Link to="/#/about" className="link animated-underline">
               ABOUT
             </Link>
           </span>
@@ -45,8 +45,8 @@ function SignInForm () {
               HOME
             </Link>
           </span>
-          <span className={`navbar-desktop-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link animated-underline">
+          <span className={`navbar-desktop-items ${isActive('/#/about') && 'active'}`}>
+            <Link to="/#/about" className="link animated-underline">
               ABOUT
             </Link>
           </span>
