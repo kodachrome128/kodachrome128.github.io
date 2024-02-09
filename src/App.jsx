@@ -7,7 +7,7 @@ import About from './pages/About';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* Use exact prop to match the exact path */}
         <Route path="/" element={<Home />} />
