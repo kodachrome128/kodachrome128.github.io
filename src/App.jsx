@@ -1,26 +1,19 @@
 import './App.css';
 import './fonts.css';
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
-import About from './pages/About'
-
+import About from './pages/About';
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-          <Routes>
-            <Route path='*' element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            {/* <Route path="/quiz/edit/:gameId" element={<EditQuizPage />}></Route> */}
-          </Routes>
-        </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* Use exact prop to match the exact path */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
