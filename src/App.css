@@ -95,10 +95,10 @@ body {
 }
 
 .title-mobile {
-  position: absolute;
-  top: 500px;
+  position: relative;
+  top: calc(55% + 25px);
   left: 50%;
-  width: 98%;
+  width: 95%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   align-items: center;
@@ -205,4 +205,16 @@ p {
   max-height: 100px;
   width: 100%;
   gap: 20px;
+}
+
+.footer-mobile {
+  display: flex;
+  position: absolute; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: calc(15% + 50px);
 }

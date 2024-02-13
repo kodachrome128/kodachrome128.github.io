@@ -12,7 +12,7 @@ function SocialLinks () {
     return  (
         <>
             {smallScreen && (
-                <div className="footer-links">
+                <div className="footer-mobile">
                     <Link href="https://www.linkedin.com/in/tao-tao-608365269/">
                         <LinkedInIcon fontSize="large" style={{ color: 'white' }} alt="linkedin_icon" />
                     </Link>
