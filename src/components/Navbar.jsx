@@ -5,7 +5,7 @@ import {
   useLocation
 } from 'react-router-dom';
 
-function SignInForm () {
+function Navbar () {
   const smallScreen = useMediaQuery('(max-width: 650px)');
   const largeScreen = useMediaQuery('(min-width: 651px)');
   const location = useLocation();
@@ -57,4 +57,4 @@ function SignInForm () {
 }
 
 
-export default SignInForm;
+export default Navbar;
