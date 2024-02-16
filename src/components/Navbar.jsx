@@ -17,17 +17,17 @@ function Navbar () {
       {smallScreen && (
         <div className="navbar-mobile">
           <span className={`navbar-mobile-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link">
+            <Link to="/projects" className="link  animated-underline">
               PROJECTS
             </Link>
           </span>
           <span className={`navbar-mobile-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link">
+            <Link to="/" className="link animated-underline">
               HOME
             </Link>
           </span>
           <span className={`navbar-mobile-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link">
+            <Link to="/about" className="link animated-underline">
               ABOUT
             </Link>
           </span>
@@ -36,17 +36,17 @@ function Navbar () {
       {largeScreen && (
         <div className="navbar-desktop">
           <span className={`navbar-desktop-items ${isActive('/projects') && 'active'}`}>
-            <Link to="/projects" className="link">
+            <Link to="/projects" className="link animated-underline">
               PROJECTS
             </Link>
           </span>
           <span className={`navbar-desktop-items ${isActive('/') && 'active'}`}>
-            <Link to="/" className="link">
+            <Link to="/" className="link animated-underline">
               HOME
             </Link>
           </span>
           <span className={`navbar-desktop-items ${isActive('/about') && 'active'}`}>
-            <Link to="/about" className="link">
+            <Link to="/about" className="link animated-underline">
               ABOUT
             </Link>
           </span>
