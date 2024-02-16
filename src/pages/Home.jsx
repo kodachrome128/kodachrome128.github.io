@@ -23,14 +23,12 @@ const Home = () => {
               </div>
             </AnimatedDiv>
           </div>
+          <div className='home-social-mobile'>
+            <SocialLinks />
+          </div>
         </>
       )}
       {largeScreen && (
-        // <>
-        //   <div className="blur-container centered-title title-padding-desktop">
-        //     <h2>Tao Tao</h2>
-        //   </div>
-        // </>
         <>
           <div className="title-home">
             <AnimatedDiv>
@@ -40,13 +38,10 @@ const Home = () => {
                 <p>This is v3 of my portfolio website. Please take a look around!</p>
               </div>
             </AnimatedDiv>
-
           </div>
+          <SocialLinks />
         </>
       )}
-      <footer>
-        <SocialLinks />
-      </footer>
     </>
   );
 };

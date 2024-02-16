@@ -30,9 +30,9 @@ const About = () => {
              </div>
             </AnimatedDiv>
           </div>
-          <footer>
+          <div>
             <SocialLinks />
-          </footer>
+          </div>
         </>
       )}
       {largeScreen && (
@@ -55,9 +55,9 @@ const About = () => {
              </div>
             </AnimatedDiv>
           </div>
-          <footer>
+          <div>
             <SocialLinks />
-          </footer>
+          </div>
         </>
       )}
     </>

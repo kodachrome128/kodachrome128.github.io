@@ -9,6 +9,7 @@ function SocialLinks () {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
+    
     return  (
         <>
             {smallScreen && (

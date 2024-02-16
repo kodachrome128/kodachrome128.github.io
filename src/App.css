@@ -218,3 +218,12 @@ p {
   gap: 20px;
   margin-top: calc(15% + 50px);
 }
+
+.home-social-mobile {
+  position: absolute; 
+  left: 0; 
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  bottom: calc(15% + 50px);
+}
