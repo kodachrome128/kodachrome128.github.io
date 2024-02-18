@@ -227,3 +227,72 @@ p {
   bottom: 0;
   bottom: calc(15% + 50px);
 }
+
+.project-tiles-desktop {
+  position: relative;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  display: flex;
+  max-width: 70%;
+  gap: 50px;
+}
+
+.project-tiles-desktop > div {
+  flex: 50%;
+  min-height: 400px;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-img-desktop {
+  /* display: block; */
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.project-img-desktop-text {
+  z-index: 1;
+  font-family: 'IBMPlexMono-Text';
+
+}
+
+.project-card-title {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  min-height: 250px;
+  padding: 5%;
+  top: 0;
+  left: 0;
+}
+
+.simulated-ecology {
+  background-image: url('../src/images/Exterior_1.png');
+}
+
+.lurkforwork {
+  background-image: url('../src/images/lurkforwork.png');
+}
+
+.highlight {
+  backdrop-filter: blur(2px);   
+  background-color: rgba(0, 0, 0, 0.2);
+  width: min-content;
+  border-radius: 10px;
+  padding: 5px;
+
+}
