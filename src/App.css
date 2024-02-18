@@ -16,8 +16,12 @@ body {
 }
 
 .navbar-desktop-items {
+  flex: 1 1 0px;
   margin: 0 50px 0 50px;
   font-size: 22px;
+  text-align: center;
+  min-width: 75px;
+  max-width: 100px;
   font-family: 'IBMPlexSans-Text';
 }
 
@@ -39,6 +43,10 @@ body {
   color: #dcdcdc;
   text-decoration: none;
   transition: 0.2s;
+}
+
+.child {
+  flex-basis: 100%;
 }
 
 .link:hover {
@@ -121,7 +129,7 @@ body {
 }
 
 .padding {
-  padding: 35px;
+  padding: 10px 35px 20px 35px;
 }
 
 .centered {
@@ -238,8 +246,9 @@ p {
   justify-content: center;
   padding: 35px;
   display: flex;
-  max-width: 70%;
+  max-width: 60%;
   gap: 50px;
+  align-items: stretch;
 }
 
 .project-tiles-desktop > div {
@@ -267,14 +276,14 @@ p {
 .project-img-desktop-text {
   z-index: 1;
   font-family: 'IBMPlexMono-Text';
-
+  font-size: 3.5vw;
 }
 
 .project-card-title {
   background-size: cover;
   background-position: center;
   border-radius: 10px 10px 0 0;
-  min-height: 250px;
+  height: 250px;
   padding: 5%;
   top: 0;
   left: 0;
@@ -294,5 +303,19 @@ p {
   width: min-content;
   border-radius: 10px;
   padding: 5px;
+}
 
+.download-button {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: grey;
+  justify-content: left;
+  gap: 10px;
+  max-width: 250px;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
 }
