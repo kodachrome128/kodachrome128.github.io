@@ -10,7 +10,7 @@ const ProjectCard = ({ children }) => {
   }, []);
 
   return (
-    <div style={{ opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(100px)' }}>
+    <div style={{ opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(100px)' }} className="tile-child">
       {children}
     </div>
   );

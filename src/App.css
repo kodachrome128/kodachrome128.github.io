@@ -132,6 +132,10 @@ body {
   padding: 10px 35px 20px 35px;
 }
 
+.padding-mobile {
+  padding: 10px 10px 10px 10px;
+}
+
 .centered {
   text-align: center;
 }
@@ -238,21 +242,35 @@ p {
 
 .project-tiles-desktop {
   position: relative;
-  top: 65%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  align-items: center;
   justify-content: center;
   padding: 35px;
   display: flex;
-  max-width: 60%;
-  gap: 50px;
+  max-width: 70%;
   align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1em;  
+}
+
+.project-tiles-mobile {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .project-tiles-desktop > div {
-  flex: 50%;
+  flex-basis: 45%;
   min-height: 400px;
 }
 
@@ -278,6 +296,13 @@ p {
   font-family: 'IBMPlexMono-Text';
   font-size: 3.5vw;
 }
+
+.project-img-mobile-text {
+  z-index: 1;
+  font-family: 'IBMPlexMono-Text';
+  font-size: 10vw;
+}
+
 
 .project-card-title {
   background-size: cover;
@@ -313,9 +338,25 @@ p {
   color: white;
   background-color: grey;
   justify-content: left;
-  gap: 10px;
+  gap: 5px;
   max-width: 250px;
   border-radius: 10px;
-  padding-left: 10px;
+  padding: 0 5px 0 5px;
   margin-top: 10px;
+}
+
+.download-text {
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+button:active {
+  border-style: outset;
 }
