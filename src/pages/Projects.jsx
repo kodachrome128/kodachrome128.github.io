@@ -72,8 +72,6 @@ const Projects = () => {
       )}
       {largeScreen && (
         <>
-        <img src="../images/videophone_1.jpg">
-        </img>
           <div className="project-tiles-desktop">
             <ProjectCard>
                 <div className="blur-container"></div>
