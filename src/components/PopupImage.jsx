@@ -1,26 +1,23 @@
-import React from "react";
+import {useState} from 'react'
 import Box from '@mui/material/Box';
 // import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Button from '../components/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const style = {
+const outerStyle = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '80vw',
-  height: '80vh',
-  bgcolor: 'grey',
-  border: '2px solid #000',
-  boxShadow: 24,
-  borderRadius: '20px',
-  p: 4,
+  height: '90%',
+  width: '75%',
 };
 
-const PopupImage = ({images}) => {
-  const [open, setOpen] = React.useState(false);
+const PopupImage = ({ images }) => {
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -36,14 +33,27 @@ const PopupImage = ({images}) => {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-            <Box sx={style}>
-                {images.map((image, index) => (
-                <img key={index} src={image} alt={`Image ${index + 1}`} />
-                ))}
-            </Box>
+            <div style={outerStyle}>
+              <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
+                  <div>
+                      <img src={images[0]} />
+                  </div>
+                  <div>
+                      <img src={images[1]} />
+                  </div>
+                  <div>
+                      <img src={images[2]} />
+                  </div>
+                  <div>
+                      <img src={images[3]} />
+                  </div>
+              </Carousel>
+            </div>
+            
         </Modal>
     </div>
   );
+
 }
 
 export default PopupImage;

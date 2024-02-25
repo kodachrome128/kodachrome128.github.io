@@ -1,4 +1,4 @@
-import React from 'react';
+import {React} from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
@@ -8,11 +8,16 @@ import AppleIcon from '@mui/icons-material/Apple';
 import PopupImage from '../components/PopupImage';
 import Button from '../components/Button';
 
+import Videophone1 from '../images/Videophone_1.jpg';
+import Videophone2 from '../images/Videophone_2.jpg';
+import Videophone3 from '../images/Videophone_3.jpg';
+import Videophone4 from '../images/Videophone_4.jpg';
+
 const Projects = () => {
   const smallScreen = useMediaQuery('(max-width: 650px)');
   const largeScreen = useMediaQuery('(min-width: 651px)');
 
-  const videophoneImages = ['./images/videophone_1.jpg', './images/videophone_2.jpg', './images/videophone_3.jpg', './images/videophone_4.jpg'];
+  const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
 
   const downloadWindows = () => {
     window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
@@ -66,6 +71,23 @@ const Projects = () => {
                   </div>
               </div>
               </ProjectCard>
+              <ProjectCard>
+                <div className="blur-container"></div>
+                <div className="project-tile">
+                  <div className="project-card-title videophone">
+                    <h2 className="project-img-mobile-text padding-mobile highlight">Brutalist Videophone</h2>
+                  </div>
+                  <div className="project-card-info padding">
+                    <p>CATEGORY: 3D Modelling</p>            
+                    <p>This brutalist videophone was my first ever 3D modelling project. This project was to demonstrate my ability to
+                      design an original and creative idea. 
+                    </p>
+                    <PopupImage images={videophoneImages} active={1} setActive={1}>
+                      
+                    </PopupImage>
+                  </div>
+              </div>
+              </ProjectCard>
               
           </div>
         </>
@@ -116,7 +138,7 @@ const Projects = () => {
               <ProjectCard>
                 <div className="blur-container"></div>
                 <div className="project-tile">
-                  <div className="project-card-title lurkforwork">
+                  <div className="project-card-title videophone">
                     <h2 className="project-img-desktop-text padding highlight">Brutalist Videophone</h2>
                   </div>
                   <div className="project-card-info padding">
@@ -124,7 +146,7 @@ const Projects = () => {
                     <p>This brutalist videophone was my first ever 3D modelling project. This project was to demonstrate my ability to
                       design an original and creative idea. 
                     </p>
-                    <PopupImage images={videophoneImages}>
+                    <PopupImage images={videophoneImages} active={1} setActive={1}>
                       
                     </PopupImage>
                   </div>
