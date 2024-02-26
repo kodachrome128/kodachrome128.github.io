@@ -256,7 +256,7 @@ p {
   align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1em;  
+  gap: 3em;  
 }
 
 .project-tiles-mobile {
@@ -273,7 +273,7 @@ p {
 }
 
 .project-tiles-desktop > div {
-  flex-basis: 45%;
+  flex-basis: 40%;
   min-height: 400px;
 }
 

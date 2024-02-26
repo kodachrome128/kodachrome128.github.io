@@ -2,7 +2,7 @@ import {React} from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
-// import SocialLinks from '../components/SocialLinks';
+import SocialLinks from '../components/SocialLinks';
 import MicrosoftIcon from '@mui/icons-material/Microsoft';
 import AppleIcon from '@mui/icons-material/Apple';
 import PopupImage from '../components/PopupImage';
@@ -143,8 +143,24 @@ const Projects = () => {
                   </div>
                   <div className="project-card-info padding">
                     <p>CATEGORY: 3D Modelling</p>            
-                    <p>This was my first ever 3D modelling project. A mostly forgotton relic of the 20th century, the videophone was born into an era where the idea
-                      was simply way too ahead of the current technology. This is the envisionment of what a possible late 20th century videophone could have looked like
+                    <p>This was my first ever 3D modelling project. This is the envisionment of what a possible late 20th century videophone could have looked like
+                      if it was designed based on the brutalism architectural movement present in that era. This was designed over the course of 8 weeks in Maya and rendered in Arnold.
+                    </p>
+                    <PopupImage images={videophoneImages} active={1} setActive={1}>
+                      
+                    </PopupImage>
+                  </div>
+              </div>
+              </ProjectCard>
+              <ProjectCard>
+                <div className="blur-container"></div>
+                <div className="project-tile">
+                  <div className="project-card-title videophone">
+                    <h2 className="project-img-desktop-text padding highlight">Brutalist Videophone</h2>
+                  </div>
+                  <div className="project-card-info padding">
+                    <p>CATEGORY: 3D Modelling</p>            
+                    <p>This was my first ever 3D modelling project. This is the envisionment of what a possible late 20th century videophone could have looked like
                       if it was designed based on the brutalism architectural movement present in that era. This was designed over the course of 8 weeks in Maya and rendered in Arnold.
                     </p>
                     <PopupImage images={videophoneImages} active={1} setActive={1}>
