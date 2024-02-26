@@ -5,6 +5,9 @@ body {
   min-height: 100%;
   display: flex;
   color: white;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  
 }
 
 .navbar-desktop {
@@ -370,4 +373,15 @@ button:active {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.tile-child {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }

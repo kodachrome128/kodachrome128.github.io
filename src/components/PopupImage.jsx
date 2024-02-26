@@ -1,9 +1,12 @@
 import {useState} from 'react'
 import Box from '@mui/material/Box';
 // import Button from '@mui/material/Button';
+import Backdrop from '@mui/material/Backdrop';
+
 import Modal from '@mui/material/Modal';
 import Button from '../components/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import CloseIcon from '@mui/icons-material/Close';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -15,6 +18,7 @@ const outerStyle = {
   height: '90%',
   width: '75%',
 };
+
 
 const PopupImage = ({ images }) => {
   const [open, setOpen] = useState(false);
@@ -34,6 +38,9 @@ const PopupImage = ({ images }) => {
             aria-describedby="modal-modal-description"
         >
             <div style={outerStyle}>
+                {/* <Button onClick={handleClose}>
+                    <CloseIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                </Button> */}
               <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
                   <div>
                       <img src={images[0]} />
@@ -48,8 +55,7 @@ const PopupImage = ({ images }) => {
                       <img src={images[3]} />
                   </div>
               </Carousel>
-            </div>
-            
+            </div>   
         </Modal>
     </div>
   );

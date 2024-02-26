@@ -1,21 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+import React, { useState, useEffect, useRef } from 'react';
+import '../App.css';
 
 const ProjectCard = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
 
   useEffect(() => {
-    const handleBeforeUnload = () => setIsVisible(false);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
   }, []);
 
   return (
-    <Fade bottom distance="10%" duration={1500}>
-    <div style={{ opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(100px)' }} className="tile-child">
+    <div 
+      ref={ref}
+      className={`tile-child ${isVisible ? 'fade-in' : ''}`}>
       {children}
     </div>
-    </Fade>
   );
 };
 

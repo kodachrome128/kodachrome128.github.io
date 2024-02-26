@@ -143,8 +143,9 @@ const Projects = () => {
                   </div>
                   <div className="project-card-info padding">
                     <p>CATEGORY: 3D Modelling</p>            
-                    <p>This brutalist videophone was my first ever 3D modelling project. This project was to demonstrate my ability to
-                      design an original and creative idea. 
+                    <p>This was my first ever 3D modelling project. A mostly forgotton relic of the 20th century, the videophone was born into an era where the idea
+                      was simply way too ahead of the current technology. This is the envisionment of what a possible late 20th century videophone could have looked like
+                      if it was designed based on the brutalism architectural movement present in that era. This was designed over the course of 8 weeks in Maya and rendered in Arnold.
                     </p>
                     <PopupImage images={videophoneImages} active={1} setActive={1}>
                       
