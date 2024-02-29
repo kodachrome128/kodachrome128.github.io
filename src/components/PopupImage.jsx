@@ -1,30 +1,73 @@
-import {useState} from 'react'
-import Box from '@mui/material/Box';
+import {useState, useEffect} from 'react'
 // import Button from '@mui/material/Button';
-import Backdrop from '@mui/material/Backdrop';
 
 import Modal from '@mui/material/Modal';
 import Button from '../components/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import CloseIcon from '@mui/icons-material/Close';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const outerStyle = {
+const innerStyle = {
+  height: '100%',
+};
+
+const imgDivStyle = {
+  width: '100%',
+  height: '100%',
+};
+
+const imgStyle = {
+  width: '100%',
+  height: '100%',
+};
+
+const landscapeStyle = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  height: '90%',
-  width: '75%',
+  height: '80%',
+  width: '80%',
 };
 
+const portraitStyle = {
+  width: 'auto',
+  height: '100%',
+};
 
-const PopupImage = ({ images }) => {
+const squareStyle = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  height: '50%',
+  width: '50%',
+};
+
+const PopupImage = ({ images, text}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const [style, setStyle] = useState(null);
+
+  useEffect(() => {
+    if (images.length > 0) {
+      const firstImage = new Image();
+      firstImage.src = images[0];
+      firstImage.onload = () => {
+        const ratio = firstImage.naturalWidth / firstImage.naturalHeight;
+        if (ratio > 1) {
+          setStyle(landscapeStyle); // Landscape image
+        } else if (ratio < 1) {
+          setStyle(portraitStyle); // Portrait image
+        } else {
+          setStyle(squareStyle); // Square image
+        }
+      };
+    }
+  }, [images]);
+  
   return (
     <div>
         <Button onClick={handleOpen}>
@@ -37,24 +80,19 @@ const PopupImage = ({ images }) => {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-            <div style={outerStyle}>
+            <div style={style}>
                 {/* <Button onClick={handleClose}>
                     <CloseIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                 </Button> */}
-              <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
-                  <div>
-                      <img src={images[0]} />
-                  </div>
-                  <div>
-                      <img src={images[1]} />
-                  </div>
-                  <div>
-                      <img src={images[2]} />
-                  </div>
-                  <div>
-                      <img src={images[3]} />
-                  </div>
-              </Carousel>
+              <div style={innerStyle}>
+                <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
+                  {images.map((image, index) => (
+                    <div style={imgDivStyle}>
+                      <img src={image} alt={`Slide ${index}`} style={imgStyle} />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
             </div>   
         </Modal>
     </div>

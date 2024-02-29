@@ -37,23 +37,25 @@ const About = () => {
       )}
       {largeScreen && (
         <>
-          <div className="title-desktop">
-            <AnimatedDiv>
-              <div className="blur-container"></div>
-              <div className="title-content">
-                <div className="heading-with-pic-desktop">
-                  <div>
-                    <h2>Hello! I'm Tao Tao.</h2>              
-                    <p>I'm currently a 4th year student at the University of New South Wales studying a bachelor's degree in Computer Science and Media Art.
-                      I am focused on a variety of topics such as UI and UX design, fullstack development, as well as visual effects, 3D design and photography.
-                    </p>
-                    <p>Please check out some of my projects and creations!</p>
+          <div className="centered-content">
+            <div className="title-desktop">
+              <AnimatedDiv>
+                <div className="blur-container"></div>
+                <div className="title-content">
+                  <div className="heading-with-pic-desktop">
+                    <div>
+                      <h2>Hello! I'm Tao Tao.</h2>              
+                      <p>I'm currently a 4th year student at the University of New South Wales studying a bachelor's degree in Computer Science and Media Art.
+                        I am focused on a variety of topics such as UI and UX design, fullstack development, as well as visual effects, 3D design and photography.
+                      </p>
+                      <p>Please check out some of my projects and creations!</p>
+                    </div>
+                    <img src={my_pic} alt="myself" className="profile-pic"></img>
                   </div>
-                  <img src={my_pic} alt="myself" className="profile-pic"></img>
-                </div>
 
-             </div>
-            </AnimatedDiv>
+              </div>
+              </AnimatedDiv>
+            </div>
           </div>
           <div>
             <SocialLinks />

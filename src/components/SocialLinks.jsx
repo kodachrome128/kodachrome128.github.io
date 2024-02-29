@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from '@mui/material';
 
 
-function SocialLinks () {
+const SocialLinks = ({ hasContent }) => {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
@@ -23,7 +23,7 @@ function SocialLinks () {
                 </div>
             )}
             {largeScreen && (
-                <div className="footer-links">
+                <div className={hasContent ? "footer-links-adaptive" : "footer-links"}>
                     <Link href="https://www.linkedin.com/in/tao-tao-608365269/">
                         <LinkedInIcon fontSize="large" style={{ color: 'white' }} alt="linkedin_icon" />
                     </Link>
