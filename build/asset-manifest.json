@@ -1,9 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.50642cd0.css",
-    "main.js": "/static/js/main.02b15ac8.js",
+    "main.css": "/static/css/main.af213753.css",
+    "main.js": "/static/js/main.47dd16f8.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Exterior_1.png": "/static/media/Exterior_1.6e4d4f0c63cd2c22880b.png",
+    "static/media/img_2.jpg": "/static/media/img_2.a9ef15c08bc60c209ad5.jpg",
+    "static/media/img_6.jpg": "/static/media/img_6.c1952ef1bf391ffc388b.jpg",
+    "static/media/img_5.jpg": "/static/media/img_5.c4c8f319d4abd0ade8e3.jpg",
+    "static/media/img_4.jpg": "/static/media/img_4.a08031fa448e1d2c5499.jpg",
+    "static/media/img_3.jpg": "/static/media/img_3.972128be905719d0e55a.jpg",
+    "static/media/img_7.jpg": "/static/media/img_7.58a8b14557dcc49bc096.jpg",
+    "static/media/img_1.jpg": "/static/media/img_1.32d9c32fa21ad3df43d8.jpg",
+    "static/media/Videophone_3.jpg": "/static/media/Videophone_3.c2a6af9ae8b9c46e9c2f.jpg",
+    "static/media/Videophone_4.jpg": "/static/media/Videophone_4.2f156339f81b18c0f882.jpg",
+    "static/media/Videophone_2.jpg": "/static/media/Videophone_2.9ca8c76e433e39390e61.jpg",
+    "static/media/Videophone_1.jpg": "/static/media/Videophone_1.4cc657cf45383b23ed01.jpg",
     "static/media/literally_me.jpg": "/static/media/literally_me.8c9dab85dff867aca01a.jpg",
+    "static/media/lurkforwork.png": "/static/media/lurkforwork.070109d715277e2e8f26.png",
     "static/media/IBMPlexSans-MediumItalic.woff2": "/static/media/IBMPlexSans-MediumItalic.396b559e76eb1ac77b0f.woff2",
     "static/media/IBMPlexSans-ExtraLightItalic.woff2": "/static/media/IBMPlexSans-ExtraLightItalic.c94f6fb439194ef86478.woff2",
     "static/media/IBMPlexSans-LightItalic.woff2": "/static/media/IBMPlexSans-LightItalic.6b4367ec5e78f1257170.woff2",
@@ -37,12 +50,12 @@
     "static/media/IBMPlexMono-Thin.woff2": "/static/media/IBMPlexMono-Thin.5b7d891969f57ac7ffdd.woff2",
     "static/media/IBMPlexMono-Regular.woff2": "/static/media/IBMPlexMono-Regular.0130dae9b0089c864756.woff2",
     "index.html": "/index.html",
-    "main.50642cd0.css.map": "/static/css/main.50642cd0.css.map",
-    "main.02b15ac8.js.map": "/static/js/main.02b15ac8.js.map",
+    "main.af213753.css.map": "/static/css/main.af213753.css.map",
+    "main.47dd16f8.js.map": "/static/js/main.47dd16f8.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50642cd0.css",
-    "static/js/main.02b15ac8.js"
+    "static/css/main.af213753.css",
+    "static/js/main.47dd16f8.js"
   ]
 }

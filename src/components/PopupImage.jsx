@@ -1,6 +1,5 @@
-import {useState, useEffect} from 'react'
-// import Button from '@mui/material/Button';
-
+import { useState, useEffect } from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Modal from '@mui/material/Modal';
 import Button from '../components/Button';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -44,12 +43,14 @@ const squareStyle = {
   width: '50%',
 };
 
-const PopupImage = ({ images, text}) => {
+const PopupImage = ({ images }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const [style, setStyle] = useState(null);
+
+  const smallScreen = useMediaQuery('(max-width: 650px)');
 
   useEffect(() => {
     if (images.length > 0) {
@@ -67,38 +68,38 @@ const PopupImage = ({ images, text}) => {
       };
     }
   }, [images]);
-  
+
   return (
-    <div>
+    <>
+      <div>
         <Button onClick={handleOpen}>
-            <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-            <p className="download-text">View Gallery</p>
+          <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+          <p className="download-text">View Gallery</p>
         </Button>
         <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
         >
-            <div style={style}>
-                {/* <Button onClick={handleClose}>
-                    <CloseIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                </Button> */}
-              <div style={innerStyle}>
-                <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
-                  {images.map((image, index) => (
-                    <div style={imgDivStyle}>
-                      <img src={image} alt={`Slide ${index}`} style={imgStyle} />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            </div>   
+          <div style={smallScreen ? { ...style, width: '90%', height: '25%' } : style}>
+            {/* <Button onClick={handleClose}>
+              <CloseIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+            </Button> */}
+            <div style={innerStyle}>
+              <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
+                {images.map((image, index) => (
+                  <div style={imgDivStyle} key={index}>
+                    <img src={image} alt={`Slide ${index}`} style={imgStyle} />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          </div>
         </Modal>
-    </div>
+      </div>
+    </>
   );
-
 }
 
 export default PopupImage;
-
