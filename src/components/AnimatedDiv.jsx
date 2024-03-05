@@ -1,31 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from '@react-spring/web';
+import React, { useState, useEffect, useRef } from 'react';
 
 const AnimatedDiv = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  const props = useSpring({
-    from: { opacity: 0, translateY: 100 },
-    to: isVisible ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: 100 },
-    config: { duration: 1000, easing: t => t * (2 - t) }, // Custom ease-out function
-    onRest: () => !isVisible && setIsVisible(true),
-  });
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
 
   useEffect(() => {
-    const handleBeforeUnload = () => setIsVisible(false);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
   }, []);
 
   return (
-    <animated.div
-      style={{
-        opacity: props.opacity,
-        transform: props.translateY.interpolate((value) => `translateY(${value}px)`),
-      }} className="padding"
-    >
+    <div 
+      ref={ref}
+      className={`tile-child padding ${isVisible ? 'fade-in' : ''}`}>
       {children}
-    </animated.div>
+    </div>
   );
 };
 

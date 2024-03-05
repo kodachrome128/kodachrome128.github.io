@@ -14,7 +14,7 @@ const Home = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="title-home">
+          <div className="title-mobile">
             <AnimatedDiv>
               <div className="blur-container"></div>
               <div className="title-content">

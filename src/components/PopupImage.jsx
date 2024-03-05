@@ -43,8 +43,8 @@ const squareStyle = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  height: '50%',
-  width: '50%',
+  height: '45%',
+  width: '45%',
 };
 
 const PopupImage = ({ images }) => {

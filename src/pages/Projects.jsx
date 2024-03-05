@@ -13,21 +13,17 @@ import Videophone2 from '../images/Videophone_2.jpg';
 import Videophone3 from '../images/Videophone_3.jpg';
 import Videophone4 from '../images/Videophone_4.jpg';
 
-import ruralNSW1 from '../images/photo_projects/rural_nsw/img_1.jpg'
-import ruralNSW2 from '../images/photo_projects/rural_nsw/img_2.jpg'
-import ruralNSW3 from '../images/photo_projects/rural_nsw/img_3.jpg'
-import ruralNSW4 from '../images/photo_projects/rural_nsw/img_4.jpg'
-import ruralNSW5 from '../images/photo_projects/rural_nsw/img_5.jpg'
-import ruralNSW6 from '../images/photo_projects/rural_nsw/img_6.jpg'
-import ruralNSW7 from '../images/photo_projects/rural_nsw/img_7.jpg'
+import ruralNSW1 from '../images/photo_projects/rural_nsw/img_1.jpg';
+import ruralNSW2 from '../images/photo_projects/rural_nsw/img_2.jpg';
+import ruralNSW3 from '../images/photo_projects/rural_nsw/img_3.jpg';
+import ruralNSW4 from '../images/photo_projects/rural_nsw/img_4.jpg';
+import ruralNSW5 from '../images/photo_projects/rural_nsw/img_5.jpg';
+import ruralNSW6 from '../images/photo_projects/rural_nsw/img_6.jpg';
+import ruralNSW7 from '../images/photo_projects/rural_nsw/img_7.jpg';
 
-import hongkong1 from '../images/photo_projects/hong_kong/img_1.jpg';
-import hongkong2 from '../images/photo_projects/hong_kong/img_2.jpg';
-import hongkong3 from '../images/photo_projects/hong_kong/img_3.jpg';
-import hongkong4 from '../images/photo_projects/hong_kong/img_4.jpg';
-import hongkong5 from '../images/photo_projects/hong_kong/img_5.jpg';
-import hongkong6 from '../images/photo_projects/hong_kong/img_6.jpg';
-import hongkong7 from '../images/photo_projects/hong_kong/img_7.jpg';
+import ecology1 from '../images/Exterior_1.png';
+import ecology2 from '../images/Interior_1.png';
+import ecology3 from '../images/Interior_2.png';
 
 const Projects = () => {
   const smallScreen = useMediaQuery('(max-width: 650px)');
@@ -35,7 +31,7 @@ const Projects = () => {
 
   const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
   const ruralNSWImages = [ruralNSW1, ruralNSW2, ruralNSW3, ruralNSW4, ruralNSW5, ruralNSW6, ruralNSW7];
-  const hongkongImages = [hongkong1, hongkong2, hongkong3, hongkong4, hongkong5, hongkong6, hongkong7]
+  const ecologyImages = [ecology1, ecology2, ecology3];
 
   const downloadWindows = () => {
     window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
@@ -68,10 +64,7 @@ const Projects = () => {
                           <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                           <p className="download-text">Windows Download</p>
                       </a>
-                      <a href="https://unsw-my.sharepoint.com/:f:/g/personal/z5361154_ad_unsw_edu_au/EklaPrNu0jFMhGhgBiBoLSUBa6mgA9b5EZhwYeFUu7Hj3g?e=TmYXqD&download=1" class="download-button">
-                        <AppleIcon fontSize="medium" style={{ color: 'white' }} alt="apple_icon" />
-                        <p className="download-text">Mac M1 Download</p>
-                      </a>                      
+                      <PopupImage images={ecologyImages} active={1} setActive={1} />           
                     </div>
 
                   </div>
@@ -155,10 +148,7 @@ const Projects = () => {
                         <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                         <p className="download-text">Windows Download</p>
                       </Button>
-                      <Button onClick={downloadWindows}>
-                        <AppleIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                        <p className="download-text">Mac M1 Download</p>
-                      </Button>                   
+                      <PopupImage images={ecologyImages} active={1} setActive={1} />
                     </div>
 
                   </div>
