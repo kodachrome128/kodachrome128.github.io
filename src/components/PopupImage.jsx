@@ -30,8 +30,12 @@ const landscapeStyle = {
 };
 
 const portraitStyle = {
-  width: 'auto',
-  height: '100%',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  height: '30%',
+  width: '30%',
 };
 
 const squareStyle = {

@@ -352,6 +352,10 @@ p {
   background-image: url('../src/images/photo_projects/rural_nsw/img_1.jpg');
 }
 
+.hongkong {
+  background-image: url('../src/images/photo_projects/hong_kong/img_1.jpg');
+}
+
 .highlight {
   backdrop-filter: blur(2px);   
   background-color: rgba(0, 0, 0, 0.2);

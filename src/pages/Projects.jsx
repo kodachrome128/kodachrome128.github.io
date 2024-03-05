@@ -21,12 +21,21 @@ import ruralNSW5 from '../images/photo_projects/rural_nsw/img_5.jpg'
 import ruralNSW6 from '../images/photo_projects/rural_nsw/img_6.jpg'
 import ruralNSW7 from '../images/photo_projects/rural_nsw/img_7.jpg'
 
+import hongkong1 from '../images/photo_projects/hong_kong/img_1.jpg';
+import hongkong2 from '../images/photo_projects/hong_kong/img_2.jpg';
+import hongkong3 from '../images/photo_projects/hong_kong/img_3.jpg';
+import hongkong4 from '../images/photo_projects/hong_kong/img_4.jpg';
+import hongkong5 from '../images/photo_projects/hong_kong/img_5.jpg';
+import hongkong6 from '../images/photo_projects/hong_kong/img_6.jpg';
+import hongkong7 from '../images/photo_projects/hong_kong/img_7.jpg';
+
 const Projects = () => {
   const smallScreen = useMediaQuery('(max-width: 650px)');
   const largeScreen = useMediaQuery('(min-width: 651px)');
 
   const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
   const ruralNSWImages = [ruralNSW1, ruralNSW2, ruralNSW3, ruralNSW4, ruralNSW5, ruralNSW6, ruralNSW7];
+  const hongkongImages = [hongkong1, hongkong2, hongkong3, hongkong4, hongkong5, hongkong6, hongkong7]
 
   const downloadWindows = () => {
     window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
@@ -201,6 +210,22 @@ const Projects = () => {
                   </div>
               </div>
               </ProjectCard>
+              {/* <ProjectCard>
+                <div className="blur-container"></div>
+                <div className="project-tile">
+                  <div className="project-card-title hongkong">
+                    <h2 className="project-img-desktop-text padding highlight">Hong Kong</h2>
+                  </div>
+                  <div className="project-card-info padding">
+                    <p>CATEGORY: Solo Photography Project</p>            
+                    <p>These are just a collection of the photos I took while I was in Hong Kong. The project was to first document all the 
+                      remaining neon signs that still hang, but once I got there, I realised that there were far fewer than I could have everything imagined.
+                    </p>
+                    <p>Shot on the Contax RTS II and Contax T2, on both Portra 400 and Cinestill 800T. </p>
+                    <PopupImage images={hongkongImages} active={1} setActive={1} />
+                  </div>
+              </div>
+              </ProjectCard> */}
           </div>
           <div>
             <SocialLinks hasContent={true}/>
