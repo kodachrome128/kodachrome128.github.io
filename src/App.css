@@ -37,6 +37,8 @@ body {
 }
 
 .navbar-mobile-items {
+  flex: 1 1 0px;
+  text-align: center;
   margin: 0 25px 0 25px;
   font-size: 20px;
   font-family: 'IBMPlexSans-Text';
@@ -114,7 +116,18 @@ body {
 
 .title-mobile {
   position: relative;
-  top: calc(55% + 25px);
+  top: calc(55% + 50px);
+  left: 50%;
+  width: 95%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.title-mobile-home {
+  position: relative;
+  top: 50vh;
   left: 50%;
   width: 95%;
   -webkit-transform: translate(-50%, -50%);

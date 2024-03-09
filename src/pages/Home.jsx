@@ -14,12 +14,12 @@ const Home = () => {
       </header>
       {smallScreen && (
         <>
-          <div className="title-mobile">
+          <div className="title-mobile-home">
             <AnimatedDiv>
               <div className="blur-container"></div>
               <div className="title-content">
                 <h1 class="centered">Welcome</h1>
-                <p>This is v3 of my portfolio website. Please take a look around!</p>
+                <p>Hi there, I'm Tao! This is v3 of my portfolio website. Please take a look around!</p>
               </div>
             </AnimatedDiv>
           </div>
