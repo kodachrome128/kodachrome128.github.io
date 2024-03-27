@@ -127,7 +127,7 @@ body {
 
 .title-mobile-home {
   position: relative;
-  top: 50vh;
+  top: 45vh;
   left: 50%;
   width: 95%;
   -webkit-transform: translate(-50%, -50%);
