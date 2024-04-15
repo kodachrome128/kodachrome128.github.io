@@ -21,7 +21,7 @@ body {
 .navbar-desktop-items {
   flex: 1 1 0px;
   margin: 0 50px 0 50px;
-  font-size: 22px;
+  font-size: 23px;
   text-align: center;
   min-width: 75px;
   max-width: 100px;
@@ -263,7 +263,7 @@ p {
   align-items: center;
   width: 100%;
   gap: 20px;
-  margin-top: calc(75px);
+  padding-bottom: 15px;
 }
 
 .home-social-mobile {
@@ -276,19 +276,16 @@ p {
 }
 
 .project-tiles-desktop {
-  position: relative;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
   justify-content: center;
   padding: 35px;
-  display: flex;
   max-width: 70%;
   align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 3em;  
+  margin: 0 auto;
 }
 
 .project-tiles-mobile {
@@ -337,7 +334,6 @@ p {
   font-family: 'IBMPlexMono-Text';
   font-size: 10vw;
 }
-
 
 .project-card-title {
   background-size: cover;
@@ -397,11 +393,20 @@ p {
 }
 
 .project-links {
+  width: calc(100% - 70px);
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
+  position: absolute;
+  bottom: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.project-card-info {
+  margin-bottom: 55px;
 }
 
 button:active {
@@ -424,4 +429,32 @@ button:active {
 .fade-in {
   opacity: 1;
   transform: translateY(0);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+.button {
+  border: 2px solid white;
+  background: transparent;
+  margin: 5px 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  font-size: 16px;
+  font-family: 'IBMPlexMono-Regular';
+}
+
+.button:hover {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+}
+
+.active_button {
+  background-color: white;
+  color: black;
 }

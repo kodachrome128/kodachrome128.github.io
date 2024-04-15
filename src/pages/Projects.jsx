@@ -7,6 +7,7 @@ import MicrosoftIcon from '@mui/icons-material/Microsoft';
 import AppleIcon from '@mui/icons-material/Apple';
 import PopupImage from '../components/PopupImage';
 import Button from '../components/Button';
+import CategoryFilter from '../components/CategoryFilter';
 
 import Videophone1 from '../images/Videophone_1.jpg';
 import Videophone2 from '../images/Videophone_2.jpg';
@@ -39,7 +40,7 @@ const Projects = () => {
 
   return (
     <>
-      <header style={{ margin: '0', width: '100%', top: '0', left: '0', position: 'absolute' }}>
+      <header style={{ margin: '0', width: '100%', top: '0', left: '0', position: 'relative' }}>
         <Navbar />
       </header>
       {smallScreen && (
@@ -128,7 +129,8 @@ const Projects = () => {
       )}
       {largeScreen && (
         <>
-          <div className="project-tiles-desktop">
+        <CategoryFilter />
+          {/* <div className="project-tiles-desktop">
             <ProjectCard>
                 <div className="blur-container"></div>
                 <div className="project-tile">
@@ -200,23 +202,7 @@ const Projects = () => {
                   </div>
               </div>
               </ProjectCard>
-              {/* <ProjectCard>
-                <div className="blur-container"></div>
-                <div className="project-tile">
-                  <div className="project-card-title hongkong">
-                    <h2 className="project-img-desktop-text padding highlight">Hong Kong</h2>
-                  </div>
-                  <div className="project-card-info padding">
-                    <p>CATEGORY: Solo Photography Project</p>            
-                    <p>These are just a collection of the photos I took while I was in Hong Kong. The project was to first document all the 
-                      remaining neon signs that still hang, but once I got there, I realised that there were far fewer than I could have everything imagined.
-                    </p>
-                    <p>Shot on the Contax RTS II and Contax T2, on both Portra 400 and Cinestill 800T. </p>
-                    <PopupImage images={hongkongImages} active={1} setActive={1} />
-                  </div>
-              </div>
-              </ProjectCard> */}
-          </div>
+          </div> */}
           <div>
             <SocialLinks hasContent={true}/>
           </div>
