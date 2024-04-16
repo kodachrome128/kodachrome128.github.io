@@ -10,7 +10,9 @@ function Navbar () {
   const largeScreen = useMediaQuery('(min-width: 651px)');
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    return location.pathname === path || location.pathname.startsWith(path + '/');
+  }
 
   return (
     <>

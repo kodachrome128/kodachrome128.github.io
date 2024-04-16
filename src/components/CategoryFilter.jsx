@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { items } from './ProjectsList'
 import ProjectCard from '../components/ProjectCard';
 import PopupImage from '../components/PopupImage';
+import Button from './Button';
+import LinkIcon from '@mui/icons-material/Link';
 
 export default function CategoryFilter() {
     const [selectedFilters, setSelectedFilters] = useState([]);
@@ -68,6 +70,7 @@ export default function CategoryFilter() {
                             {item.images.length > 0 ? (
                                 <PopupImage images={item.images} active={1} setActive={1} />
                             ) : null}
+                            {item.link}
                             </div>
                         </div>
                     </ProjectCard>

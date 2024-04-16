@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Modal from '@mui/material/Modal';
 import Button from '../components/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import ImageIcon from '@mui/icons-material/Image';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -16,8 +16,13 @@ const imgDivStyle = {
 };
 
 const imgStyle = {
-  width: '100%',
+  // objectFit: 'cover',
+  // width: '100%',
+  // height: '100%',
   height: '100%',
+  width: '100%',
+  objectFit: 'contain',
+  objectPosition: 'center',
 };
 
 const landscapeStyle = {
@@ -43,8 +48,8 @@ const squareStyle = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  height: '45%',
-  width: '45%',
+  height: '80%',
+  width: '60%',
 };
 
 const PopupImage = ({ images }) => {
@@ -77,7 +82,7 @@ const PopupImage = ({ images }) => {
     <>
       <div>
         <Button onClick={handleOpen}>
-          <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+          <ImageIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
           <p className="download-text">View Gallery</p>
         </Button>
         <Modal

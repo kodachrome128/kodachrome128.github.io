@@ -1,8 +1,12 @@
 import MicrosoftIcon from '@mui/icons-material/Microsoft';
 import AppleIcon from '@mui/icons-material/Apple';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import PopupImage from './PopupImage';
 import Button from './Button';
 import CategoryFilter from './CategoryFilter';
+import {
+    Link, 
+  } from 'react-router-dom';
 
 import Videophone1 from '../images/Videophone_1.jpg';
 import Videophone2 from '../images/Videophone_2.jpg';
@@ -21,9 +25,14 @@ import ecology1 from '../images/Exterior_1.png';
 import ecology2 from '../images/Interior_1.png';
 import ecology3 from '../images/Interior_2.png';
 
+import dungeonmania1 from '../images/Dungeonmania_1.png';
+import dungeonmania2 from '../images/Dungeonmania_2.png';
+import dungeonmania3 from '../images/Dungeonmania_3.png';
+
 const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
 const ruralNSWImages = [ruralNSW1, ruralNSW2, ruralNSW3, ruralNSW4, ruralNSW5, ruralNSW6, ruralNSW7];
 const ecologyImages = [ecology1, ecology2, ecology3];
+const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3]
 
 const downloadWindows = () => {
   window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
@@ -48,6 +57,14 @@ export const items = [
         ),
         downloadFunction: downloadWindows,
         images: ecologyImages,
+        link: (
+            <Link to="/projects/simulated-ecology" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
     },
     {
         name: 'Dungeonmania',
@@ -61,7 +78,15 @@ export const items = [
                 This project was written in Java over the course of 4 weeks. 
             </p>
         ),
-        images: []
+        images: dungeonmaniaImages,
+        link: (
+            <Link to="/projects/simulated-ecology" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
     },
     {
         name: 'LurkForWork',
@@ -75,6 +100,14 @@ export const items = [
             </p>
         ),
         images: [],
+        link: (
+            <Link to="/projects/simulated-ecology" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
     },
     {
         name: 'Brutalist Videophone',
@@ -93,6 +126,14 @@ export const items = [
         </p>
         ),
         images: videophoneImages,
+        link: (
+            <Link to="/projects/simulated-ecology" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
     },
     {
         name: 'Rural NSW',
@@ -109,5 +150,13 @@ export const items = [
         </p>
         ),
         images: ruralNSWImages,
+        link: (
+            <Link to="/projects/simulated-ecology" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
     },
   ];

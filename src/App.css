@@ -201,10 +201,23 @@ h3 {
   font-size: 30px;
 }
 
+h4 {
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 20px;
+}
+
 p {
   font-family: 'IBMPlexMono-Regular';
   font-size: 15px;
 }
+
+li {
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 15px;
+}
+
+ul li { padding: 5px 0px; }
+
 
 .small-margin {
  margin: 10px 0 10px 0;
@@ -353,6 +366,10 @@ p {
   background-image: url('../src/images/lurkforwork.png');
 }
 
+.dungeonmania {
+  background-image: url('../src/images/Dungeonmania_2.png');
+}
+
 .videophone {
   background-image: url('../src/images/Videophone_2.jpg');
 }
@@ -392,6 +409,10 @@ p {
   font-size: 12px;
 }
 
+.link-text {
+  text-decoration: none;
+}
+
 .project-links {
   width: calc(100% - 70px);
   display: flex;
@@ -414,10 +435,25 @@ button:active {
 }
 
 .carousel-root {
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  height: 100%;
+  width: 100% !important;
+}
+
+.slider-wrapper {
+  height: 100% !important;
+}
+
+.slider {
+  height: 100% !important;
 }
 
 .tile-child {
@@ -457,4 +493,23 @@ button:active {
 .active_button {
   background-color: white;
   color: black;
+}
+
+.project-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  max-width: 70%;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3em;  
+  margin: 0 auto;
+}
+
+.project-info-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around
 }
