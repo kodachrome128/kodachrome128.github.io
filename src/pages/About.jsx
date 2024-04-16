@@ -46,7 +46,7 @@ const About = () => {
                     <div>
                       <h2>Hello! I'm Tao Tao.</h2>              
                       <p>I'm currently a 4th year student at the University of New South Wales studying a bachelor's degree in Computer Science and Media Art.
-                        I am focused on a variety of topics such as UI and UX design, fullstack development, as well as visual effects, 3D design and photography.
+                        I am focused on a variety of topics such as gameplay programming, fullstack development, UI and UX development, as well as visual effects, 3D design and photography.
                       </p>
                       <p>Please check out some of my projects and creations!</p>
                     </div>

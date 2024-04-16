@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c2ec248.css",
-    "main.js": "/static/js/main.2ffbe46f.js",
+    "main.css": "/static/css/main.0e7e7c1f.css",
+    "main.js": "/static/js/main.d4831e95.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/img_2.jpg": "/static/media/img_2.a9ef15c08bc60c209ad5.jpg",
     "static/media/img_6.jpg": "/static/media/img_6.c1952ef1bf391ffc388b.jpg",
@@ -18,7 +18,10 @@
     "static/media/Videophone_1.jpg": "/static/media/Videophone_1.4cc657cf45383b23ed01.jpg",
     "static/media/Interior_1.png": "/static/media/Interior_1.ffff4db8d3463dba0400.png",
     "static/media/literally_me.jpg": "/static/media/literally_me.8c9dab85dff867aca01a.jpg",
+    "static/media/Dungeonmania_3.png": "/static/media/Dungeonmania_3.f7d2ca6ef5a1deff3b37.png",
     "static/media/lurkforwork.png": "/static/media/lurkforwork.070109d715277e2e8f26.png",
+    "static/media/Dungeonmania_1.png": "/static/media/Dungeonmania_1.2c7b137425f1e21b5be8.png",
+    "static/media/Dungeonmania_2.png": "/static/media/Dungeonmania_2.0911b36dbdc6bfebf06b.png",
     "static/media/IBMPlexSans-MediumItalic.woff2": "/static/media/IBMPlexSans-MediumItalic.396b559e76eb1ac77b0f.woff2",
     "static/media/IBMPlexSans-ExtraLightItalic.woff2": "/static/media/IBMPlexSans-ExtraLightItalic.c94f6fb439194ef86478.woff2",
     "static/media/IBMPlexSans-LightItalic.woff2": "/static/media/IBMPlexSans-LightItalic.6b4367ec5e78f1257170.woff2",
@@ -52,12 +55,12 @@
     "static/media/IBMPlexMono-Thin.woff2": "/static/media/IBMPlexMono-Thin.5b7d891969f57ac7ffdd.woff2",
     "static/media/IBMPlexMono-Regular.woff2": "/static/media/IBMPlexMono-Regular.0130dae9b0089c864756.woff2",
     "index.html": "/index.html",
-    "main.6c2ec248.css.map": "/static/css/main.6c2ec248.css.map",
-    "main.2ffbe46f.js.map": "/static/js/main.2ffbe46f.js.map",
+    "main.0e7e7c1f.css.map": "/static/css/main.0e7e7c1f.css.map",
+    "main.d4831e95.js.map": "/static/js/main.d4831e95.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c2ec248.css",
-    "static/js/main.2ffbe46f.js"
+    "static/css/main.0e7e7c1f.css",
+    "static/js/main.d4831e95.js"
   ]
 }
