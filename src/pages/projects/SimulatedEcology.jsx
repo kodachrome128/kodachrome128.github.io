@@ -95,7 +95,8 @@ const SimulatedEcology = () => {
               <div className="blur-container"></div>
               <div style={blockStyle}>
                 <div style={projectTitleStyle}>
-                  <h2 className="project-img-desktop-text">Simulated Ecology</h2>     
+                  <h2 className="project-img-desktop-text">Simulated Ecology</h2>  
+                  <h4>CATEGORY: Game Development, 3D Modelling</h4>   
                   <div>
                   <p>
                     Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
