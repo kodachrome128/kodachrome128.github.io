@@ -80,7 +80,7 @@ export const items = [
         ),
         images: dungeonmaniaImages,
         link: (
-            <Link to="/projects/simulated-ecology" class="link-text">
+            <Link to="/projects/dungeonmania" class="link-text">
                 <Button>
                     <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                     <p className="download-text">Learn More</p>

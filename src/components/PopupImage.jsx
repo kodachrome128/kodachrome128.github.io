@@ -92,9 +92,6 @@ const PopupImage = ({ images }) => {
           aria-describedby="modal-modal-description"
         >
           <div style={smallScreen ? { ...style, width: '90%', height: '25%' } : style}>
-            {/* <Button onClick={handleClose}>
-              <CloseIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-            </Button> */}
             <div style={innerStyle}>
               <Carousel dynamicHeight={true} showThumbs={false} infiniteLoop={true}>
                 {images.map((image, index) => (

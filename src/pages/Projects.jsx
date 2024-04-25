@@ -45,7 +45,7 @@ const Projects = () => {
       </header>
       {smallScreen && (
         <>
-        <div className="project-tiles-mobile">
+        {/* <div className="project-tiles-mobile">
             <ProjectCard>
                 <div className="blur-container"></div>
                 <div className="project-tile">
@@ -97,9 +97,7 @@ const Projects = () => {
                       if it was designed based on the brutalism architectural movement present in that era.
                     </p>
                     <p>This was designed over the course of 8 weeks in Maya and rendered in Arnold.</p>
-                    <PopupImage images={videophoneImages} active={1} setActive={1}>
-                      
-                    </PopupImage>
+                    <PopupImage images={videophoneImages} active={1} setActive={1} />
                   </div>
               </div>
               </ProjectCard>
@@ -121,7 +119,8 @@ const Projects = () => {
               </div>
               </ProjectCard>
               
-          </div>
+          </div> */}
+          <CategoryFilter />
           <div>
             <SocialLinks hasContent={true}/>
           </div>

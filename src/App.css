@@ -1,3 +1,4 @@
+
 body {
   background: rgb(15, 15, 15);
   margin: 0;
@@ -7,7 +8,20 @@ body {
   color: white;
   font-smooth: antialiased;
   -webkit-font-smoothing: antialiased;
-  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html:root {
+  color-scheme: dark;
+}
+
+#root {
+  width: 100vw;
 }
 
 .navbar-desktop {
@@ -156,7 +170,7 @@ body {
 }
 
 .padding-mobile {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 20px 20px;
 }
 
 .centered {
@@ -293,7 +307,8 @@ ul li { padding: 5px 0px; }
   align-items: center;
   justify-content: center;
   padding: 35px;
-  max-width: 70%;
+  width: 70%;
+  max-width: 2500px;
   align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row;
@@ -302,16 +317,17 @@ ul li { padding: 5px 0px; }
 }
 
 .project-tiles-mobile {
-  position: relative;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  padding: 35px;
-  flex-direction: column;
-  gap: 25px;
+  justify-content: center;
+  padding-top: 35px;
+  width: 90%;
+  max-width: 600px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3em;  
+  margin: 0 auto;
 }
 
 .project-tiles-desktop > div {
@@ -326,7 +342,6 @@ ul li { padding: 5px 0px; }
 }
 
 .project-img-desktop {
-  /* display: block; */
   max-width: 100%;
   width: auto;
   height: auto;
@@ -339,7 +354,7 @@ ul li { padding: 5px 0px; }
 .project-img-desktop-text {
   z-index: 1;
   font-family: 'IBMPlexMono-Text';
-  font-size: 3vw;
+  font-size: min(3vw, 70px);
 }
 
 .project-img-mobile-text {
@@ -420,14 +435,14 @@ ul li { padding: 5px 0px; }
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
-  position: absolute;
+  position: fixed;
   bottom: 35px;
   margin-left: 35px;
   margin-right: 35px;
 }
 
 .project-card-info {
-  margin-bottom: 55px;
+  margin-bottom: 100px;
 }
 
 button:active {
@@ -472,7 +487,9 @@ button:active {
   justify-content: center;
   margin-top: 20px;
   position: relative;
+  flex-wrap: wrap;
 }
+
 .button {
   border: 2px solid white;
   background: transparent;
@@ -499,17 +516,38 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   padding: 35px;
-  max-width: 70%;
   align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 3em;  
-  margin: 0 auto;
+  gap: 3em;
+  width: 70%;
+  max-width: 2000px;
+}
+
+
+.project-mobile {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.project-title {
+  z-index: 1;
+  font-family: 'IBMPlexMono-Text';
 }
 
 .project-info-links {
   display: flex;
   width: 100%;
-  justify-content: space-around
+  justify-content: space-around;
+  gap: 10px;
 }

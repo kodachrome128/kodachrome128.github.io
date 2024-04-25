@@ -13,14 +13,12 @@ import my_pic from '../../images/literally_me.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import ecology1 from '../../images/Exterior_1.png';
-import ecology2 from '../../images/Interior_1.png';
-import ecology3 from '../../images/Interior_2.png';
-import ecology4 from '../../images/Simulated_4.png';
-import ecology5 from '../../images/Simulated_5.png';
+import dungeonmania1 from '../../images/Dungeonmania_1.png';
+import dungeonmania2 from '../../images/Dungeonmania_2.png';
+import dungeonmania3 from '../../images/Dungeonmania_3.png';
 import ProjectCard from '../../components/ProjectCard';
 
-const SimulatedEcology = () => {
+const Dungeonmania = () => {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
@@ -30,7 +28,7 @@ const SimulatedEcology = () => {
 
     const blockStyle = {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'start',
         justifyContent: 'start',
         gap: '10px',
     }
@@ -52,11 +50,7 @@ const SimulatedEcology = () => {
         width: '100%',
     }
 
-    const ecologyImages = [ecology1, ecology2, ecology3, ecology4, ecology5];
-
-    const downloadWindows = () => {
-        window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
-    }
+    const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3]
 
     return (
         <>
@@ -71,7 +65,7 @@ const SimulatedEcology = () => {
                         <div className="padding-mobile">
                             <h2 className="project-title">Simulated Ecology</h2>  
                             <h4>CATEGORY: Game Development, 3D Modelling</h4>
-                            <img src={ecology1} style={projectPicStyle} />
+                            <img src={dungeonmania1} style={projectPicStyle} />
                             <div>
                                 <p>
                                     Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
@@ -88,11 +82,7 @@ const SimulatedEcology = () => {
                                     <li>Post-processing effects and lighting were completed in Unity</li>
                                 </ul>
                                 <div className="project-info-links">
-                                    <Button onClick={downloadWindows}>
-                                        <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                                        <p className="download-text">Windows Download</p>
-                                    </Button>
-                                    <PopupImage images={ecologyImages} active={1} setActive={1} />
+                                    <PopupImage images={dungeonmaniaImages} active={1} setActive={1} />
                                 </div>
                             </div> 
                         </div>
@@ -107,8 +97,8 @@ const SimulatedEcology = () => {
                         <div className="blur-container"></div>
                         <div style={blockStyle}>
                             <div style={projectTitleStyle}>
-                                <h2 className="project-title">Simulated Ecology</h2>  
-                                <h4>CATEGORY: Game Development, 3D Modelling</h4>   
+                                <h2 className="project-title">Dungeonmania</h2>  
+                                <h4>CATEGORY: Game Development</h4>   
                                 <div>
                                 <p>
                                     Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
@@ -125,24 +115,20 @@ const SimulatedEcology = () => {
                                     <li>Post-processing effects and lighting were completed in Unity</li>
                                 </ul>
                                 <div className="project-info-links">
-                                <Button onClick={downloadWindows}>
-                                    <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                                    <p className="download-text">Windows Download</p>
-                                </Button>
-                                <PopupImage images={ecologyImages} active={1} setActive={1} />
+                                <PopupImage images={dungeonmaniaImages} active={1} setActive={1} />
                                 </div>
                             </div> 
                             </div>
                             <div style={imgStyle}>
                                 <div style= {{}}>
-                                    <img src={ecology1} style={projectPicStyle} />
+                                    <img src={dungeonmania1} style={projectPicStyle} />
                                 </div>
                                 <div className="project-info-links">
-                                    <div>
-                                        <img src={ecology2} style={projectPicStyle} />
+                                    <div style={projectTitleStyle}>
+                                        <img src={dungeonmania2} style={projectPicStyle} />
                                     </div>
-                                    <div>
-                                        <img src={ecology3} style={projectPicStyle} />
+                                    <div style={projectTitleStyle}>
+                                        <img src={dungeonmania3} style={projectPicStyle} />
                                     </div>
                                 </div>
                             </div>
@@ -158,4 +144,4 @@ const SimulatedEcology = () => {
     );
 };
 
-export default SimulatedEcology;
+export default Dungeonmania;
