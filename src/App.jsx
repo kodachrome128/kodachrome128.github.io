@@ -8,7 +8,10 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 
 import SimulatedEcology from './pages/projects/SimulatedEcology';
-import Dungeonmania from './pages/projects/Dungeonmania';
+import DungeonMania from './pages/projects/DungeonMania';
+import LurkForWork from './pages/projects/LurkForWork';
+import Videophone from './pages/projects/Videophone';
+
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/simulated-ecology" element={<SimulatedEcology />} />
-        <Route path="/projects/dungeonmania" element={<Dungeonmania />} />
+        <Route path="/projects/dungeonmania" element={<DungeonMania />} />
+        <Route path="/projects/lurkforwork" element={<LurkForWork />} />
+        <Route path="/projects/videophone" element={<Videophone />} />
       </Routes>
     </HashRouter>
   );

@@ -121,9 +121,9 @@ const Projects = () => {
               
           </div> */}
           <CategoryFilter />
-          <div>
+          {/* <div>
             <SocialLinks hasContent={true}/>
-          </div>
+          </div> */}
         </>
       )}
       {largeScreen && (
@@ -202,9 +202,9 @@ const Projects = () => {
               </div>
               </ProjectCard>
           </div> */}
-          <div>
+          {/* <div>
             <SocialLinks hasContent={true}/>
-          </div>
+          </div> */}
         </>
       )}
     </>

@@ -25,24 +25,25 @@ const SimulatedEcology = () => {
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
     const projectTitleStyle = {
-        width: '50%'
+        width: '55%'
     };
 
     const blockStyle = {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'start',
         justifyContent: 'start',
-        gap: '10px',
+        gap: '25px',
     }
 
     const imgStyle = {
-        maxWidth: '50%',
+        maxWidth: '45%',
         display: 'flex',
         flexDirection: 'column',
         height: '50%',
         gap: '10px',
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: '50px',
     }
 
     const projectPicStyle =  {
@@ -76,6 +77,14 @@ const SimulatedEcology = () => {
                                 <p>
                                     Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
                                     able to experience nature in a simulated digital environment.                
+                                </p>
+                                <br />
+                                <h4>OBJECTIVE:</h4>
+                                <p>
+                                    The primary objective of this project is for me to familiarize myself with the Unity game engine, 
+                                    a popular game engine used throughout the industry. 
+                                    It was a change for me to develop scripts under my own specifications in accordance to what I need, 
+                                    and a good chance for me to demonstrate my scripting skills.
                                 </p>
                                 <br />
                                 <h4>PROCESS:</h4>
@@ -115,6 +124,14 @@ const SimulatedEcology = () => {
                                     able to experience nature in a simulated digital environment.                
                                 </p>
                                 <br />
+                                <h4>OBJECTIVE:</h4>
+                                <p>
+                                    The primary objective of this project is for me to familiarize myself with the Unity game engine, 
+                                    a popular game engine used throughout the industry. 
+                                    It was a change for me to develop scripts under my own specifications in accordance to what I need, 
+                                    and a good chance for me to demonstrate my scripting skills.
+                                </p>
+                                <br />
                                 <h4>PROCESS:</h4>
                                 <ul>
                                     <li>Modelling was done in Autodesk Maya</li>
@@ -124,26 +141,18 @@ const SimulatedEcology = () => {
                                     <li>Scripts for interactions were written in C#</li>
                                     <li>Post-processing effects and lighting were completed in Unity</li>
                                 </ul>
-                                <div className="project-info-links">
-                                <Button onClick={downloadWindows}>
-                                    <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                                    <p className="download-text">Windows Download</p>
-                                </Button>
-                                <PopupImage images={ecologyImages} active={1} setActive={1} />
-                                </div>
                             </div> 
                             </div>
                             <div style={imgStyle}>
-                                <div style= {{}}>
-                                    <img src={ecology1} style={projectPicStyle} />
-                                </div>
+                                <img src={ecology1} style={projectPicStyle} />
+                                <img src={ecology2} style={projectPicStyle} />
+                                <img src={ecology3} style={projectPicStyle} />
                                 <div className="project-info-links">
-                                    <div>
-                                        <img src={ecology2} style={projectPicStyle} />
-                                    </div>
-                                    <div>
-                                        <img src={ecology3} style={projectPicStyle} />
-                                    </div>
+                                    <Button onClick={downloadWindows}>
+                                        <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                                        <p className="download-text">Windows Download</p>
+                                    </Button>
+                                    <PopupImage images={ecologyImages} active={1} setActive={1} />
                                 </div>
                             </div>
                         </div>

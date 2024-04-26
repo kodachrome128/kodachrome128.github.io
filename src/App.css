@@ -119,7 +119,7 @@ html:root {
   position: absolute;
   width: 90%;
   max-width: 1000px;
-  top: 400px;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, calc(-50% + 30px));
   transform: translate(-50%, calc(-50% + 30px));

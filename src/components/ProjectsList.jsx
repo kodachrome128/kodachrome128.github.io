@@ -90,18 +90,18 @@ export const items = [
     },
     {
         name: 'LurkForWork',
-        category: 'Front-End',
+        category: 'Frontend',
         bg_img: 'lurkforwork',
         description: (
             <p style={{ whiteSpace: 'pre-line' }}>
-            LurkForWork was one of the assignments for COMP6080, the front-end
-            design course at UNSW. It is designed to be a replica of the LinkedIn
-            website, fully written in Javascript with DOM manipulation.
+                LurkForWork was my very first attempt at creating a fully functioning frontend using
+                Javascript, HTML and CSS. It is designed to be a replica of the LinkedIn
+                website, fully written in Javascript with DOM manipulation.
             </p>
         ),
         images: [],
         link: (
-            <Link to="/projects/simulated-ecology" class="link-text">
+            <Link to="/projects/lurkforwork" class="link-text">
                 <Button>
                     <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                     <p className="download-text">Learn More</p>
@@ -127,7 +127,7 @@ export const items = [
         ),
         images: videophoneImages,
         link: (
-            <Link to="/projects/simulated-ecology" class="link-text">
+            <Link to="/projects/videophone" class="link-text">
                 <Button>
                     <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
                     <p className="download-text">Learn More</p>
@@ -135,28 +135,28 @@ export const items = [
             </Link>
         )
     },
-    {
-        name: 'Rural NSW',
-        category: 'Photography',
-        bg_img: 'rural-nsw',
-        description: (
-        <p style={{ whiteSpace: 'pre-line' }}>
-          Rural NSW is a collection of photos captured around, well, rural NSW.
-          I was especially captivated by the contrast between the countryside
-          and the cities, and just how quiet everything really could be.
-          <br />
-          <br />
-          Shot on the Bronica S2 with the Nikkor-P 75mm f2.8, and Portra 400.
-        </p>
-        ),
-        images: ruralNSWImages,
-        link: (
-            <Link to="/projects/simulated-ecology" class="link-text">
-                <Button>
-                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                    <p className="download-text">Learn More</p>
-                </Button>
-            </Link>
-        )
-    },
+    // {
+    //     name: 'Rural NSW',
+    //     category: 'Photography',
+    //     bg_img: 'rural-nsw',
+    //     description: (
+    //     <p style={{ whiteSpace: 'pre-line' }}>
+    //       Rural NSW is a collection of photos captured around, well, rural NSW.
+    //       I was especially captivated by the contrast between the countryside
+    //       and the cities, and just how quiet everything really could be.
+    //       <br />
+    //       <br />
+    //       Shot on the Bronica S2 with the Nikkor-P 75mm f2.8, and Portra 400.
+    //     </p>
+    //     ),
+    //     images: ruralNSWImages,
+    //     link: (
+    //         <Link to="/projects/simulated-ecology" class="link-text">
+    //             <Button>
+    //                 <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+    //                 <p className="download-text">Learn More</p>
+    //             </Button>
+    //         </Link>
+    //     )
+    // },
   ];

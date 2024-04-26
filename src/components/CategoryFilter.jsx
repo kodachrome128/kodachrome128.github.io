@@ -13,7 +13,7 @@ export default function CategoryFilter() {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
-    let filters = ['3D Modelling', 'GameDev', 'Front-End', 'Photography']
+    let filters = ['3D Modelling', 'GameDev', 'Frontend', 'Photography']
 
     const handleFilterButtonClick = (selectedCategory) => {
         if (selectedFilters.includes(selectedCategory)) {

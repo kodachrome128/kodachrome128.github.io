@@ -18,29 +18,30 @@ import dungeonmania2 from '../../images/Dungeonmania_2.png';
 import dungeonmania3 from '../../images/Dungeonmania_3.png';
 import ProjectCard from '../../components/ProjectCard';
 
-const Dungeonmania = () => {
+const DungeonMania = () => {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
     const projectTitleStyle = {
-        width: '50%'
+        width: '55%'
     };
 
     const blockStyle = {
         display: 'flex',
         alignItems: 'start',
         justifyContent: 'start',
-        gap: '10px',
+        gap: '25px',
     }
 
     const imgStyle = {
-        maxWidth: '50%',
+        maxWidth: '45%',
         display: 'flex',
         flexDirection: 'column',
         height: '50%',
         gap: '10px',
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: '50px',
     }
 
     const projectPicStyle =  {
@@ -63,24 +64,31 @@ const Dungeonmania = () => {
                     <ProjectCard>
                         <div className="blur-container"></div>
                         <div className="padding-mobile">
-                            <h2 className="project-title">Simulated Ecology</h2>  
-                            <h4>CATEGORY: Game Development, 3D Modelling</h4>
+                            <h2 className="project-title">DungeonMania</h2>  
+                            <h4>CATEGORY: Game Development</h4>
                             <img src={dungeonmania1} style={projectPicStyle} />
                             <div>
                                 <p>
-                                    Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
-                                    able to experience nature in a simulated digital environment.                
+                                    DungeonMania is a 2D top-down singleplayer game where the player has to navigate through a 
+                                    series of dugeons to collect various objects while battling different enemies.                
                                 </p>
                                 <br />
-                                <h4>PROCESS:</h4>
-                                <ul>
-                                    <li>Modelling was done in Autodesk Maya</li>
-                                    <li>Texturing was completed in Adobe Substance 3D Painter</li>
-                                    <li>Completed models with baked textures were imported into the Unity Engine</li>
-                                    <li>Sound effects were edited and mixed in Audacity</li>
-                                    <li>Scripts for interactions were written in C#</li>
-                                    <li>Post-processing effects and lighting were completed in Unity</li>
-                                </ul>
+                                <h4>OBJECTIVE:</h4>
+                                    <p>
+                                        The main goal of this project was to understand object inheritance, one of the most important 
+                                        aspects of software design. It was also another way to train myself to write more vigorous tests, 
+                                        as well as understand the process of implementing different aspects of the system through a 
+                                        provided specification sheet, a skill that is essential for any software engineer.
+                                    </p>
+                                    <br />
+                                    <h4>PROCESS:</h4>
+                                    <ul>
+                                        <li>Refactored old code provided by previous development teams</li>
+                                        <li>Studied and understood various aspects of the existing system, including object inheritance</li>
+                                        <li>Implemented various entities according to a provided list of specifications</li>
+                                        <li>Wrote and conducted thorough testing to ensure that my code was functional without errors</li>
+                                        <li>Code was fully written in Java</li>
+                                    </ul>
                                 <div className="project-info-links">
                                     <PopupImage images={dungeonmaniaImages} active={1} setActive={1} />
                                 </div>
@@ -97,30 +105,34 @@ const Dungeonmania = () => {
                         <div className="blur-container"></div>
                         <div style={blockStyle}>
                             <div style={projectTitleStyle}>
-                                <h2 className="project-title">Dungeonmania</h2>  
+                                <h2 className="project-title">DungeonMania</h2>  
                                 <h4>CATEGORY: Game Development</h4>   
                                 <div>
-                                <p>
-                                    Simulated Ecology is a real-time 3D interactive environment which depicts the futuristic possibility of only being
-                                    able to experience nature in a simulated digital environment.                
-                                </p>
-                                <br />
-                                <h4>PROCESS:</h4>
-                                <ul>
-                                    <li>Modelling was done in Autodesk Maya</li>
-                                    <li>Texturing was completed in Adobe Substance 3D Painter</li>
-                                    <li>Completed models with baked textures were imported into the Unity Engine</li>
-                                    <li>Sound effects were edited and mixed in Audacity</li>
-                                    <li>Scripts for interactions were written in C#</li>
-                                    <li>Post-processing effects and lighting were completed in Unity</li>
-                                </ul>
-                                <div className="project-info-links">
-                                <PopupImage images={dungeonmaniaImages} active={1} setActive={1} />
-                                </div>
-                            </div> 
+                                    <p>
+                                        DungeonMania is a 2D top-down singleplayer game where the player has to navigate through a 
+                                        series of dugeons to collect various objects while battling different enemies.            
+                                    </p>
+                                    <br />
+                                    <h4>OBJECTIVE:</h4>
+                                    <p>
+                                        The main goal of this project was to understand object inheritance, one of the most important 
+                                        aspects of software design. It was also another way to train myself to write more vigorous tests, 
+                                        as well as understand the process of implementing different aspects of the system through a 
+                                        provided specification sheet, a skill that is essential for any software engineer.
+                                    </p>
+                                    <br />
+                                    <h4>PROCESS:</h4>
+                                    <ul>
+                                        <li>Refactored old code provided by previous development teams</li>
+                                        <li>Studied and understood various aspects of the existing system, including object inheritance</li>
+                                        <li>Implemented various entities according to a provided list of specifications</li>
+                                        <li>Wrote and conducted thorough testing to ensure that my code was functional without errors</li>
+                                        <li>Code was fully written in Java</li>
+                                    </ul>
+                                </div> 
                             </div>
                             <div style={imgStyle}>
-                                <div style= {{}}>
+                                <div>
                                     <img src={dungeonmania1} style={projectPicStyle} />
                                 </div>
                                 <div className="project-info-links">
@@ -130,6 +142,9 @@ const Dungeonmania = () => {
                                     <div style={projectTitleStyle}>
                                         <img src={dungeonmania3} style={projectPicStyle} />
                                     </div>
+                                </div>
+                                <div className="project-info-links">
+                                    <PopupImage images={dungeonmaniaImages} active={1} setActive={1} />
                                 </div>
                             </div>
                         </div>
@@ -144,4 +159,4 @@ const Dungeonmania = () => {
     );
 };
 
-export default Dungeonmania;
+export default DungeonMania;
