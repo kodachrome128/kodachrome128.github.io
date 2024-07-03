@@ -1,6 +1,6 @@
 import './App.css';
 import './fonts.css';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 import Home from './pages/Home';
@@ -15,7 +15,7 @@ import Videophone from './pages/projects/Videophone';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/projects/lurkforwork" element={<LurkForWork />} />
         <Route path="/projects/videophone" element={<Videophone />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
