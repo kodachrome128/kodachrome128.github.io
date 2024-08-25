@@ -220,6 +220,17 @@ h4 {
   font-size: 20px;
 }
 
+h5{
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 24px;
+}
+
+h6{
+  font-family: 'IBMPlexMono-Regular';
+  font-size: 20px;
+  font-weight: 400;
+}
+
 p {
   font-family: 'IBMPlexMono-Regular';
   font-size: 15px;
@@ -550,4 +561,42 @@ button:active {
   width: 100%;
   justify-content: space-around;
   gap: 10px;
+}
+
+.commit-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+}
+
+.commit-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commit-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically (top to bottom) */
+  border-radius: 5px;
+}
+
+.commit-message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Add space between message and time */
+}
+
+.commit-time {
+  font-size: 14px;
+  color: #666;
+}
+
+.no-pad-no-margin {
+  padding: 0;
+  margin: 0;
 }
