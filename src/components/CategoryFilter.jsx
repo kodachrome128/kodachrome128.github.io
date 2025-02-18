@@ -46,7 +46,7 @@ export default function CategoryFilter() {
             <>
                 <div className="projects-list">
                     <br/>
-                    <h3 className="centered">Sort by category:</h3>
+                    <h3 className="centered">View by category:</h3>
                     <div className="buttons-container">
                         {filters.map((category, idx) => (
                         <button

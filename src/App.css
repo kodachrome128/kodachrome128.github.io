@@ -384,6 +384,10 @@ ul li { padding: 5px 0px; }
   left: 0;
 }
 
+.esgmark {
+  background-image: url('../src/images/esgmark/ESGMark-1.png');
+}
+
 .simulated-ecology {
   background-image: url('../src/images/Exterior_1.png');
 }

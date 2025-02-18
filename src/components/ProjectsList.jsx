@@ -29,16 +29,53 @@ import dungeonmania1 from '../images/Dungeonmania_1.png';
 import dungeonmania2 from '../images/Dungeonmania_2.png';
 import dungeonmania3 from '../images/Dungeonmania_3.png';
 
+import esgmark1 from '../images/esgmark/ESGMark-1.png';
+import esgmark2 from '../images/esgmark/ESGMark-2.png';
+import esgmark3 from '../images/esgmark/ESGMark-3.png';
+import esgmark4 from '../images/esgmark/ESGMark-4.png';
+import esgmark5 from '../images/esgmark/ESGMark-5.png';
+import esgmark6 from '../images/esgmark/ESGMark-6.png';
+import esgmark7 from '../images/esgmark/ESGMark-7.png';
+import esgmark8 from '../images/esgmark/ESGMark-8.png';
+import esgmark9 from '../images/esgmark/ESGMark-9.png';
+
+
 const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
 const ruralNSWImages = [ruralNSW1, ruralNSW2, ruralNSW3, ruralNSW4, ruralNSW5, ruralNSW6, ruralNSW7];
 const ecologyImages = [ecology1, ecology2, ecology3];
 const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3]
+const esgmarkImages = [esgmark1, esgmark2, esgmark3, esgmark4, esgmark5, esgmark6, esgmark7, esgmark8, esgmark9];
 
 const downloadWindows = () => {
   window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
 }
 
 export const items = [
+    {
+        name: 'ESGMark',
+        category: 'Frontend',
+        bg_img: 'esgmark',
+        description: (
+            <p style={{ whiteSpace: 'pre-line' }}>
+                ESGMark is an interactive online web-app designed for investors to search, track and compare the ESG data of
+                various companies, with advanced features such as saving custom ESG frameworks, customisable and downloadable
+                data tables, and advanced search and comparison tools.  
+                <br />
+                <br />
+                This project was designed in Figma and developed using Python and React over the course of 10 weeks. 
+            </p>
+        ),
+        downloadFunction: downloadWindows,
+        images: esgmarkImages,
+        link: (
+            <Link to="/projects/esgmark" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
+    },
     {
         name: 'Simulated Ecology',
         category: 'GameDev',
