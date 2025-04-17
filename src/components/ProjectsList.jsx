@@ -39,18 +39,49 @@ import esgmark7 from '../images/esgmark/ESGMark-7.png';
 import esgmark8 from '../images/esgmark/ESGMark-8.png';
 import esgmark9 from '../images/esgmark/ESGMark-9.png';
 
+import delivery2 from '../images/delivery/delivery-2.png';
+import delivery3 from '../images/delivery/delivery-3.png';
+import delivery4 from '../images/delivery/delivery-4.png';
+import delivery5 from '../images/delivery/delivery-5.png';
+import delivery6 from '../images/delivery/delivery-6.png';
+
+
 
 const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
 const ruralNSWImages = [ruralNSW1, ruralNSW2, ruralNSW3, ruralNSW4, ruralNSW5, ruralNSW6, ruralNSW7];
 const ecologyImages = [ecology1, ecology2, ecology3];
-const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3]
+const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3];
 const esgmarkImages = [esgmark1, esgmark2, esgmark3, esgmark4, esgmark5, esgmark6, esgmark7, esgmark8, esgmark9];
+const deliveryImages = [delivery2, delivery3, delivery4, delivery5, delivery6];
 
-const downloadWindows = () => {
-  window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
-}
 
 export const items = [
+    {
+        name: 'DELIVERY',
+        category: 'GameDev',
+        bg_img: 'delivery',
+        description: (
+            <p style={{ whiteSpace: 'pre-line' }}>
+                DELIVERY is my personal game project. It is an original 3D first person 
+                story-based game. In an unknown time, you're starting your new job as a 
+                package receiver at Maxxon Industry. As the days progress, the incoming
+                packages become more and more bizarre, and you have to make the ultimate
+                choice. 
+                <br />
+                <br />
+                This project was made in Unity over the course of 4 months.
+            </p>
+        ),
+        images: deliveryImages,
+        link: (
+            <Link to="/projects/delivery" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
+    },
     {
         name: 'ESGMark',
         category: 'Frontend',
@@ -65,7 +96,6 @@ export const items = [
                 This project was designed in Figma and developed using Python and React over the course of 10 weeks. 
             </p>
         ),
-        downloadFunction: downloadWindows,
         images: esgmarkImages,
         link: (
             <Link to="/projects/esgmark" class="link-text">
@@ -92,7 +122,6 @@ export const items = [
                 6 weeks.
             </p>
         ),
-        downloadFunction: downloadWindows,
         images: ecologyImages,
         link: (
             <Link to="/projects/simulated-ecology" class="link-text">

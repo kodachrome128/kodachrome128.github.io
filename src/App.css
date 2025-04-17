@@ -384,6 +384,10 @@ ul li { padding: 5px 0px; }
   left: 0;
 }
 
+.delivery {
+  background-image: url('../src/images/delivery/delivery-1.png');
+}
+
 .esgmark {
   background-image: url('../src/images/esgmark/ESGMark-1.png');
 }

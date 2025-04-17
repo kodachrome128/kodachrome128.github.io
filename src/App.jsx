@@ -12,6 +12,7 @@ import SimulatedEcology from './pages/projects/SimulatedEcology';
 import DungeonMania from './pages/projects/DungeonMania';
 import LurkForWork from './pages/projects/LurkForWork';
 import Videophone from './pages/projects/Videophone';
+import Delivery from './pages/projects/Delivery';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path="/projects/dungeonmania" element={<DungeonMania />} />
         <Route path="/projects/lurkforwork" element={<LurkForWork />} />
         <Route path="/projects/videophone" element={<Videophone />} />
+        <Route path="/projects/delivery" element={<Delivery />} />
+        
       </Routes>
     </HashRouter>
   );
