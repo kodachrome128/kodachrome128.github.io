@@ -384,6 +384,10 @@ ul li { padding: 5px 0px; }
   left: 0;
 }
 
+.clockedout {
+  background-image: url('../src/images/clocked_out/clocked_out1_bg.png');
+}
+
 .delivery {
   background-image: url('../src/images/delivery/delivery-1.png');
 }

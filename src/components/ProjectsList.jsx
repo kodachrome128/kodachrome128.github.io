@@ -45,6 +45,14 @@ import delivery4 from '../images/delivery/delivery-4.png';
 import delivery5 from '../images/delivery/delivery-5.png';
 import delivery6 from '../images/delivery/delivery-6.png';
 
+import clockedout1 from '../images/clocked_out/clocked_out1.png';
+import clockedout2 from '../images/clocked_out/clocked_out2.png';
+import clockedout3 from '../images/clocked_out/clocked_out3.png';
+import clockedout4 from '../images/clocked_out/clocked_out4.png';
+import clockedout5 from '../images/clocked_out/clocked_out5.png';
+import clockedout6 from '../images/clocked_out/clocked_out6.png';
+import clockedout7 from '../images/clocked_out/clocked_out7.png';
+import clockedout8 from '../images/clocked_out/clocked_out8.png';
 
 
 const videophoneImages = [Videophone1, Videophone2, Videophone3, Videophone4];
@@ -53,9 +61,34 @@ const ecologyImages = [ecology1, ecology2, ecology3];
 const dungeonmaniaImages = [dungeonmania1, dungeonmania2, dungeonmania3];
 const esgmarkImages = [esgmark1, esgmark2, esgmark3, esgmark4, esgmark5, esgmark6, esgmark7, esgmark8, esgmark9];
 const deliveryImages = [delivery2, delivery3, delivery4, delivery5, delivery6];
-
+const clockedOutImages = [clockedout1, clockedout2, clockedout3, clockedout4, clockedout5, clockedout6, clockedout7, clockedout8];
 
 export const items = [
+    {
+        name: 'Clocked Out',
+        category: 'GameDev',
+        bg_img: 'clockedout',
+        description: (
+            <p style={{ whiteSpace: 'pre-line' }}>
+                Clocked Out is a 3D interactive exploration/shooter game designed and built
+                using Unreal Engine 5. In an unknown time, you're a worker at Maxxon Industry 
+                who was asked to stay back to work overtime. Not feeling like it,  you decide 
+                to escape the company building, with a variety of tools at your disposal. 
+                <br />
+                <br />
+                This project was made in Unreal Engine 5 over the course of 2 months.
+            </p>
+        ),
+        images: clockedOutImages,
+        link: (
+            <Link to="/projects/clockedout" class="link-text">
+                <Button>
+                    <OpenInNewIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
+                    <p className="download-text">Learn More</p>
+                </Button>
+            </Link>
+        )
+    },
     {
         name: 'DELIVERY',
         category: 'GameDev',

@@ -4,24 +4,20 @@ import Navbar from '../../components/Navbar';
 import SocialLinks from '../../components/SocialLinks';
 import AnimatedDiv from '../../components/AnimatedDiv';
 import PopupImage from '../../components/PopupImage';
-import MicrosoftIcon from '@mui/icons-material/Microsoft';
 
-import Button from '../../components/Button';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
-import my_pic from '../../images/literally_me.jpg';
-
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
-import delivery1 from '../../images/delivery/delivery-1.png';
-import delivery2 from '../../images/delivery/delivery-2.png';
-import delivery3 from '../../images/delivery/delivery-3.png';
-import delivery4 from '../../images/delivery/delivery-4.png';
-import delivery5 from '../../images/delivery/delivery-5.png';
-import delivery6 from '../../images/delivery/delivery-6.png';
+import clockedout1 from '../../images/clocked_out/clocked_out1.png';
+import clockedout2 from '../../images/clocked_out/clocked_out2.png';
+import clockedout3 from '../../images/clocked_out/clocked_out3.png';
+import clockedout4 from '../../images/clocked_out/clocked_out4.png';
+import clockedout5 from '../../images/clocked_out/clocked_out5.png';
+import clockedout6 from '../../images/clocked_out/clocked_out6.png';
+import clockedout7 from '../../images/clocked_out/clocked_out7.png';
+import clockedout8 from '../../images/clocked_out/clocked_out8.png';
 import ProjectCard from '../../components/ProjectCard';
 
-const Delivery = () => {
+const ClockedOut = () => {
     const smallScreen = useMediaQuery('(max-width: 650px)');
     const largeScreen = useMediaQuery('(min-width: 651px)');
 
@@ -54,7 +50,7 @@ const Delivery = () => {
         width: '100%',
     }
 
-    const deliveryImages = [delivery2, delivery3, delivery4, delivery5, delivery6];
+    const clockedoutImages = [clockedout1, clockedout2, clockedout3, clockedout4, clockedout5, clockedout6, clockedout7, clockedout8];
 
     const downloadWindows = () => {
         window.location.href = 'https://unsw-my.sharepoint.com/:u:/g/personal/z5361154_ad_unsw_edu_au/EY3by-TZPt5CmBqE0EtEO9sBMhg_EcOPNr44PZyxCxGu4g?e=9Cqhgb&download=1';
@@ -71,41 +67,43 @@ const Delivery = () => {
                     <ProjectCard>
                         <div className="blur-container"></div>
                         <div className="padding-mobile">
-                            <h2 className="project-title">DELIVERY</h2>  
+                            <h2 className="project-title">Clocked Out</h2>  
                             <h4>CATEGORY: Game Development, 3D Modelling</h4>
-                            <img src={delivery1} style={projectPicStyle} />
+                            <img src={clockedout1} style={projectPicStyle} />
                             <div>
                                 <p>
-                                    DELIVERY is my ultimate major project. It is an original 3D first person 
-                                    story-based game. In an unknown time, you're starting your new job as a 
-                                    package receiver at Maxxon Industry. As the days progress, the incoming
-                                    packages become more and more bizarre, and you have to make the ultimate
-                                    choice.                            
+                                    Clocked Out is a 3D interactive exploration/shooter game designed and built
+                                    using Unreal Engine 5. In an unknown time, you're a worker at Maxxon Industry 
+                                    who was asked to stay back to work overtime. Not feeling like it,  you decide 
+                                    to escape the company building, with a variety of tools at your disposal.                                  
                                 </p>
                                 <br />
                                 <h4>OBJECTIVE:</h4>
                                 <p>
-                                    My goal with this project was to completely surround myself with the full development 
-                                    lifecycle of an indie game, from pre-production to modelling to scripting and then eventually
-                                    publication. This was a good chance for me to demonstrate my ability to create scalable 
-                                    scripts as well as experiment with features such as in-game UI. 
+                                    My goal with this project is to expand my skillset by experimenting with various popular
+                                    game engines, namely Unreal Engine 5, with its built-in ray tracing and path tracing. 
+                                    Since UE5 is quickly becoming an industry standard, I felt that it is important for me
+                                    to familiarise myself with the engine to stay relevant and on top of the latest trends. 
+                                    Not only that, but this development also gave me a chance to also experiment with UE5.4's
+                                    visual scripting system for the entire development. 
+                                </p>
+                                <br />
+                                <p>
+                                    Using blueprints, I designed the 8 way locomotion system including crouching, sprinting and
+                                    peaking, item interactions, inventory management system, as well as interactive lighting and
+                                    game mechanics. 
                                 </p>
                                 <br />
                                 <h4>PROCESS:</h4>
                                 <ul>
                                     <li>Modelling was done in Autodesk Maya</li>
                                     <li>Texturing was completed in Adobe Substance 3D Painter</li>
-                                    <li>Completed models with baked textures were imported into the Unity Engine</li>
-                                    <li>Sound effects were edited and mixed in Audacity</li>
-                                    <li>Scripts for interactions were written in C#</li>
-                                    <li>Post-processing effects and lighting were completed in Unity</li>
+                                    <li>Completed models with baked textures were imported into Unreal Engine</li>
+                                    <li>Scripts for interactions were designed using blueprints</li>
+                                    <li>Post-processing effects and lighting were handled by ray tracing in UE5</li>
                                 </ul>
                                 <div className="project-info-links">
-                                    {/* <Button onClick={downloadWindows}>
-                                        <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                                        <p className="download-text">Windows Download</p>
-                                    </Button> */}
-                                    <PopupImage images={deliveryImages} active={1} setActive={1} />
+                                    <PopupImage images={clockedoutImages} active={1} setActive={1} />
                                 </div>
                             </div> 
                         </div>
@@ -120,46 +118,48 @@ const Delivery = () => {
                         <div className="blur-container"></div>
                         <div style={blockStyle}>
                             <div style={projectTitleStyle}>
-                                <h2 className="project-title">DELIVERY</h2>  
+                                <h2 className="project-title">Clocked Out</h2>  
                                 <h4>CATEGORY: Game Development, 3D Modelling</h4>   
                                 <div>
                                 <p>
-                                    DELIVERY is my ultimate major project. It is an original 3D first person 
-                                    story-based game. In an unknown time, you're starting your new job as a 
-                                    package receiver at Maxxon Industry. As the days progress, the incoming
-                                    packages become more and more bizarre, and you have to make the ultimate
-                                    choice.              
+                                    Clocked Out is a 3D interactive exploration/shooter game designed and built
+                                    using Unreal Engine 5. In an unknown time, you're a worker at Maxxon Industry 
+                                    who was asked to stay back to work overtime. Not feeling like it,  you decide 
+                                    to escape the company building, with a variety of tools at your disposal.           
                                 </p>
                                 <br />
                                 <h4>OBJECTIVE:</h4>
                                 <p>
-                                    My goal with this project was to completely surround myself with the full development 
-                                    lifecycle of an indie game, from pre-production to modelling to scripting and then eventually
-                                    publication. This was a good chance for me to demonstrate my ability to create scalable 
-                                    scripts as well as experiment with features such as in-game UI. 
+                                    My goal with this project is to expand my skillset by experimenting with various popular
+                                    game engines, namely Unreal Engine 5, with its built-in ray tracing and path tracing. 
+                                    Since UE5 is quickly becoming an industry standard, I felt that it is important for me
+                                    to familiarise myself with the engine to stay relevant and on top of the latest trends. 
+                                    Not only that, but this development also gave me a chance to also experiment with UE5.4's
+                                    visual scripting system for the entire development. 
+                                </p>
+                                <br />
+                                <p>
+                                    Using blueprints, I designed the 8 way locomotion system including crouching, sprinting and
+                                    peaking, item interactions, inventory management system, as well as interactive lighting and
+                                    game mechanics. 
                                 </p>
                                 <br />
                                 <h4>PROCESS:</h4>
                                 <ul>
                                     <li>Modelling was done in Autodesk Maya</li>
                                     <li>Texturing was completed in Adobe Substance 3D Painter</li>
-                                    <li>Completed models with baked textures were imported into the Unity Engine</li>
-                                    <li>Sound effects were edited and mixed in Audacity</li>
-                                    <li>Scripts for interactions were written in C#</li>
-                                    <li>Post-processing effects and lighting were completed in Unity</li>
+                                    <li>Completed models with baked textures were imported into Unreal Engine</li>
+                                    <li>Scripts for interactions were designed using blueprints</li>
+                                    <li>Post-processing effects and lighting were handled by ray tracing in UE5</li>
                                 </ul>
                             </div> 
                             </div>
                             <div style={imgStyle}>
-                                <img src={delivery2} style={projectPicStyle} />
-                                <img src={delivery4} style={projectPicStyle} />
-                                <img src={delivery6} style={projectPicStyle} />
+                                <img src={clockedout1} style={projectPicStyle} />
+                                <img src={clockedout3} style={projectPicStyle} />
+                                <img src={clockedout5} style={projectPicStyle} />
                                 <div className="project-info-links">
-                                    {/* <Button onClick={downloadWindows}>
-                                        <MicrosoftIcon fontSize="medium" style={{ color: 'white' }} alt="windows_icon" />
-                                        <p className="download-text">Windows Download</p>
-                                    </Button> */}
-                                    <PopupImage images={deliveryImages} active={1} setActive={1} />
+                                    <PopupImage images={clockedoutImages} active={1} setActive={1} />
                                 </div>
                             </div>
                         </div>
@@ -174,4 +174,4 @@ const Delivery = () => {
     );
 };
 
-export default Delivery;
+export default ClockedOut;

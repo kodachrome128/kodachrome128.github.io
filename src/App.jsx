@@ -13,6 +13,7 @@ import DungeonMania from './pages/projects/DungeonMania';
 import LurkForWork from './pages/projects/LurkForWork';
 import Videophone from './pages/projects/Videophone';
 import Delivery from './pages/projects/Delivery';
+import ClockedOut from './pages/projects/ClockedOut';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route path="/projects/lurkforwork" element={<LurkForWork />} />
         <Route path="/projects/videophone" element={<Videophone />} />
         <Route path="/projects/delivery" element={<Delivery />} />
-        
+        <Route path="/projects/clockedout" element={<ClockedOut />} />
       </Routes>
     </HashRouter>
   );
